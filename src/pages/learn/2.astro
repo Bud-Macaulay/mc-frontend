@@ -1,0 +1,57 @@
+---
+import Layout from "@layouts/Layout.astro";
+import LearnBannerList from "@components/LearnBannerList.astro";
+import SquareButtonList from "@components/SquareButtonList.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Learn", href: "learn" },
+];
+
+const file = fs.readFileSync("./src/data/learn-topsections.yml", "utf8");
+const data = yaml.load(file);
+
+// learn buttons?
+const learnButtons = [
+  {
+    href: "https://www.lhumos.org/",
+    img: "images/logos/lhumos_temp.png",
+    title: "",
+    subtitle: "Lhumos is a Learning Hub for Modelling and Simulation ",
+  },
+  {
+    href: "https://www.osscar.org/",
+    img: "images/osscar-logo.svg",
+    title: "",
+    subtitle: "Open Software Services for Classrooms and Research",
+  },
+];
+---
+
+<Layout breadcrumbs={breadcrumbs} title="Learn">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Learn</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <p>The following sections are developped externally...</p>
+
+      <SquareButtonList
+        buttons={learnButtons}
+        containerMargin={"mx-50"}
+        numCols={2}
+        aspectRatio="5/1"
+        imgSize="w-32 h-16"
+      />
+    </section>
+
+    <section class="space-y-4">
+      <h3 class="text-2xl">Videos and Slides</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+      <LearnBannerList entries={data.entries} rootPath="learn/sections" />
+    </section>
+  </div>
+</Layout>

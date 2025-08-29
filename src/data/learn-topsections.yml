@@ -1,0 +1,39 @@
+# Yamlified topsections.
+# Here to give a human readible format of the learn-manifest.
+# Used to populate /learn
+entries:
+  - id: Btmngu
+    slug: marvel-events
+    title: MARVEL events
+    description: Video recordings of MARVEL Events.
+    thumbnail_url: "marvel_nccr.png"
+
+  - title: "AiiDA and Materials Cloud tutorials"
+    id: mnG1lg
+    slug: aiida-and-materials-cloud-tutorials
+    description: "Video recordings and educational material from past AiiDA and Materials Cloud tutorials."
+    thumbnail_url: "aiida-logo.png"
+
+  - title: PSI schools
+    id: 12A7nC
+    slug: psi-schools
+    description: "Video recordings and educational materials from schools at the Paul Scherrer Institute (PSI), Switzerland."
+    thumbnail_url: "psi.svg"
+
+  - title: "Quantum ESPRESSO schools"
+    id: VLoB41
+    slug: quantum-espresso-schools
+    description: "Video recordings and educational material from past schools on Quantum ESPRESSO."
+    thumbnail_url: "qe-logo.png"
+
+  - title: "Wannier90 schools"
+    id: kpbmzt
+    slug: wannier90-schools
+    description: "Video recordings and educational material from past schools on Wannier90."
+    thumbnail_url: "wannier90-logo.png"
+
+  - title: Fireside chats for lockdown times
+    id: spVa3j
+    slug: fireside-chats-for-lockdown-times
+    description: "Video recordings and educational materials on computational materials science."
+    thumbnail_url: "fireside-chats.jpg"

@@ -1,6 +1,15 @@
 ---
-// tools / discover banner listings.
-// since these dont need API hits at all.
+/**
+ * Common banner component used to turn build banners from arrays.
+ *
+ * Props:
+ * - entries: Array of items with:
+ *   - link: URL or relative path (external links open in new tab)
+ *   - title: Text shown as the banner link
+ *   - author (optional): Text shown next to the author section
+ *   - description (optional): Text shown next to the description heading.
+ * - rootPath: Base path for internal links
+ */
 const { entries, rootPath } = Astro.props;
 ---
 
@@ -45,14 +54,19 @@ const { entries, rootPath } = Astro.props;
                 </span>
               ))}
           </div>
-          <div class="entry-author">
-            <b>Authors:&nbsp;</b>
-            {entry.authors}
-          </div>
-          <div class="entry-description">
-            <b>Description: </b>
-            <span set:html={entry.description} />
-          </div>
+          {entry.authors && (
+            <div class="entry-author">
+              <b>Authors:&nbsp;</b>
+              {entry.authors}
+            </div>
+          )}
+
+          {entry.description && (
+            <div class="entry-description">
+              <b>Description: </b>
+              <span set:html={entry.description} />
+            </div>
+          )}
         </div>
       </div>
     ))

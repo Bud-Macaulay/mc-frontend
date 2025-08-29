@@ -1,0 +1,10 @@
+work:
+  - href: "https://www.aiidalab.net"
+    img: "images/aiidalab_gears.png"
+    title: "AiiDAlab"
+    subtitle: "Run your own simulations using AiiDA on the cloud"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/quantum_mobile.png"
+    title: "Quantum Mobile"
+    subtitle: "Quantum simulation codes + AiiDA in a virtual machine"

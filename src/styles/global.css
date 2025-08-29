@@ -3,12 +3,13 @@
 @layer components {
   /* 
   For consistancy between banner-styled lists (tools/discover/learn)
+  While learn uses a slightly different component they both inherit these classes.
   */
   .entries-container {
     @apply space-y-4 p-2;
   }
   .entry-container {
-    @apply flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm;
+    @apply flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm hover:shadow-lg transition-shadow duration-200;
   }
   .entry-flex-shrink {
     @apply flex-shrink-0;

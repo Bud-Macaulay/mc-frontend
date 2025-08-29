@@ -556,10 +556,8 @@
     ],
     "additional_resources": [
       {
-        "description": "Kieron Burke's slides",
-        "external": true,
         "name": "Slides (PDF)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/marvel_dist_lectures/2018-burke-slides.pdf"
+        "url": "2018-burke-slides.pdf"
       }
     ]
   },
@@ -643,10 +641,8 @@
     ],
     "additional_resources": [
       {
-        "description": "Annabella Selloni's slides",
-        "external": true,
         "name": "Slides (PDF)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/marvel_dist_lectures/2017-selloni-slides.pdf"
+        "url": "2017-selloni-slides.pdf"
       }
     ]
   },
@@ -1544,10 +1540,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Bercx",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day1_tutorial_overview_Bercx.pdf"
+        "name": "Slides Bercx (PDF)",
+        "url": "day1_tutorial_overview_Bercx.pdf"
       }
     ]
   },
@@ -1571,10 +1565,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Ramirez",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day1_intro_to_AiiDA_Ramirez.pdf"
+        "name": "Slides Ramirez (PDF)",
+        "url": "day1_intro_to_AiiDA_Ramirez.pdf"
       }
     ]
   },
@@ -1618,16 +1610,12 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Huber (Powerpoint)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day2_provenance_workflows_Huber.pptx"
+        "url": "day2_provenance_workflows_Huber.pptx"
       },
       {
-        "description": "",
-        "external": true,
         "name": "Slides Huber (PDF)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day2_provenance_workflows_Huber.pdf"
+        "url": "day2_provenance_workflows_Huber.pdf"
       }
     ]
   },
@@ -1671,10 +1659,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Pizzi",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_Materials_Cloud_Pizzi.pdf"
+        "name": "Slides Pizzi (PDF)",
+        "url": "day4_Materials_Cloud_Pizzi.pdf"
       }
     ]
   },
@@ -1698,16 +1684,12 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Yakutovich (Keynote)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_aiidalab_Yakutovich.key"
+        "url": "day4_aiidalab_Yakutovich.key"
       },
       {
-        "description": "",
-        "external": true,
         "name": "Slides Yakutovich (Powerpoint)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_aiidalab_Yakutovich.pptx"
+        "url": "day4_aiidalab_Yakutovich.pptx"
       }
     ]
   },
@@ -1731,10 +1713,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Andersen",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_optimade_Andersen.pdf"
+        "name": "Slides Andersen (PDF)",
+        "url": "day4_optimade_Andersen.pdf"
       }
     ]
   },
@@ -1758,10 +1738,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Du",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_osscar_Du.pdf"
+        "name": "Slides Du (PDF)",
+        "url": "2020_07_aiida_tutorial/day4_osscar_Du.pdf"
       }
     ]
   },
@@ -1939,16 +1917,12 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Marzari",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day1_intro_Marzari.pdf"
+        "name": "Slides Marzari (PDF)",
+        "url": "day1_intro_Marzari.pdf"
       },
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Pizzi",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day1_AiiDA_intro_Pizzi.pdf"
+        "name": "Slides Pizzi (PDF)",
+        "url": "day1_AiiDA_intro_Pizzi.pdf"
       }
     ]
   },
@@ -1972,10 +1946,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day1_practical_information_Talirz.pdf"
+        "name": "Slides Talirz (PDF)",
+        "url": "day1_practical_information_Talirz.pdf"
       }
     ]
   },
@@ -2019,10 +1991,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Huber",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day2_workflows_intro_Huber.pdf"
+        "url": "day2_workflows_intro_Huber.pdf"
       }
     ]
   },
@@ -2051,10 +2021,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Huber",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day2_workflows_advanced_intro_Huber_Larsen.pdf"
+        "name": "Slides Huber (PDF)",
+        "url": "day2_workflows_advanced_intro_Huber_Larsen.pdf"
       }
     ]
   },
@@ -2078,10 +2046,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Fawzi Mohamed",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_workflows_NOMAD_Mohamed.pdf"
+        "name": "Slides Fawzi Mohamed (PDF)",
+        "url": "day3_workflows_NOMAD_Mohamed.pdf"
       }
     ]
   },
@@ -2105,10 +2071,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Yakutovich",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_aiida_lab_Yakutovich.pdf"
+        "name": "Slides Yakutovich (PDF)",
+        "url": "day3_aiida_lab_Yakutovich.pdf"
       }
     ]
   },
@@ -2132,10 +2096,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_plugins_Talirz.pdf"
+        "url": "day3_plugins_Talirz.pdf"
       }
     ]
   },
@@ -2160,9 +2122,8 @@
     "additional_resources": [
       {
         "description": "",
-        "external": true,
         "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_group_B_plugins_Talirz.pdf"
+        "url": "day3_group_B_plugins_Talirz.pdf"
       }
     ]
   },
@@ -2186,10 +2147,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Garcia",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_group_B_aiida-siesta_Garcia.pdf"
+        "url": "day3_group_B_aiida-siesta_Garcia.pdf"
       }
     ]
   },
@@ -2213,10 +2172,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_group_B_plugins_Talirz.pdf"
+        "name": "Slides Talirz (PDF)",
+        "url": "day3_group_B_plugins_Talirz.pdf"
       }
     ]
   },
@@ -2240,10 +2197,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Petretto",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day4_abipy_Petretto.pdf"
+        "url": "day4_abipy_Petretto.pdf"
       }
     ]
   },
@@ -2272,10 +2227,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Talirz & Pizzi",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day4_materials_cloud_Pizzi_Talirz.pdf"
+        "url": "day4_materials_cloud_Pizzi_Talirz.pdf"
       }
     ]
   },
@@ -2299,10 +2252,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day4_closing_Talirz.pdf"
+        "url": "day4_closing_Talirz.pdf"
       }
     ]
   },
@@ -2335,10 +2286,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Huber",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/sphuber_plugin_migration_workshop.pdf"
+        "name": "Slides Huber (PDF)",
+        "url": "sphuber_plugin_migration_workshop.pdf"
       }
     ]
   },
@@ -2362,10 +2311,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Arbelaez Echeverri",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/Converting_Python_2_to_Python_3.pdf"
+        "url": "Converting_Python_2_to_Python_3.pdf"
       }
     ]
   },
@@ -2389,10 +2336,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/plugin-migration-workshop_migration_guide.pdf"
+        "name": "Slides Talirz (PDF)",
+        "url": "plugin-migration-workshop_migration_guide.pdf"
       }
     ]
   },
@@ -2416,10 +2361,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
         "name": "Slides Pizzi",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/2019_03_gitflow.pdf"
+        "url": "2019_03_gitflow.pdf"
       }
     ]
   },
@@ -2443,10 +2386,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Slides Talirz",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/plugin-migration-workshop_testing_short.pdf"
+        "name": "Slides Talirz (PDF)",
+        "url": "plugin-migration-workshop_testing_short.pdf"
       }
     ]
   },
@@ -4815,10 +4756,8 @@
     ],
     "additional_resources": [
       {
-        "description": "",
-        "external": true,
-        "name": "Andreussi notes",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2017_01_qe_ictp/Andreussi_Environ_lecture.pdf"
+        "name": "Andreussi notes (PDF)",
+        "url": "Andreussi_Environ_lecture.pdf"
       }
     ]
   },
@@ -6783,14 +6722,12 @@
     ],
     "additional_resources": [
       {
-        "external": true,
         "name": "Slides",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Mostofi_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Mostofi_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
       },
       {
-        "external": true,
         "name": "Questions & Answers",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Mostofi_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Mostofi_QandA_Wannier90_School_VirtualEdition_2020.pdf"
       }
     ]
   },
@@ -6814,14 +6751,12 @@
     ],
     "additional_resources": [
       {
-        "external": true,
         "name": "Slides",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Wu_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Wu_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
       },
       {
-        "external": true,
         "name": "Questions & Answers",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Wu_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Wu_QandA_Wannier90_School_VirtualEdition_2020.pdf"
       }
     ]
   },
@@ -6845,14 +6780,12 @@
     ],
     "additional_resources": [
       {
-        "external": true,
         "name": "Slides",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Nomura_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Nomura_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
       },
       {
-        "external": true,
         "name": "Questions & Answers",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Nomura_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Nomura_QandA_Wannier90_School_VirtualEdition_2020.pdf"
       }
     ]
   },
@@ -6876,14 +6809,12 @@
     ],
     "additional_resources": [
       {
-        "external": true,
         "name": "Slides",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Damle_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Damle_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
       },
       {
-        "external": true,
         "name": "Questions & Answers",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Damle_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Damle_QandA_Wannier90_School_VirtualEdition_2020.pdf"
       }
     ]
   },
@@ -6907,14 +6838,12 @@
     ],
     "additional_resources": [
       {
-        "external": true,
         "name": "Slides",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Pizzi_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Pizzi_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
       },
       {
-        "external": true,
         "name": "Questions & Answers",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Pizzi_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Pizzi_QandA_Wannier90_School_VirtualEdition_2020.pdf"
       }
     ]
   },
@@ -6938,14 +6867,12 @@
     ],
     "additional_resources": [
       {
-        "external": true,
         "name": "Slides",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Margine_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Margine_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
       },
       {
-        "external": true,
         "name": "Questions & Answers",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Margine_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+        "url": "Margine_QandA_Wannier90_School_VirtualEdition_2020.pdf"
       }
     ]
   },
@@ -6983,17 +6910,14 @@
     "speakers": [],
     "additional_resources": [
       {
-        "external": true,
         "name": "Downloadable archive",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/2020_03_Oxford.tar.gz"
+        "url": "2020_03_Oxford.tar.gz"
       },
       {
-        "external": true,
         "name": "Github repository",
         "url": "https://github.com/wannier-developers/wannier-tutorials"
       },
       {
-        "external": true,
         "name": "Quantum Mobile v20.03.1",
         "url": "https://github.com/marvel-nccr/quantum-mobile/releases/tag/20.03.1"
       }
@@ -7036,24 +6960,20 @@
     ],
     "additional_resources": [
       {
-        "external": true,
-        "name": "Recording (high resolution, video+audio)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (full video).mp4"
+        "name": "Recording",
+        "url": "2020_04 - Marzari Fireside 1 (full video).mp4"
       },
       {
-        "external": true,
         "name": "Recording (audio only)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (audio only).m4a"
+        "url": "2020_04 - Marzari Fireside 1 (audio only).m4a"
       },
       {
-        "external": true,
-        "name": "Slides (original)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (original slides).pdf"
+        "name": "Slides",
+        "url": "2020_04 - Marzari Fireside 1 (original slides).pdf"
       },
       {
-        "external": true,
         "name": "Slides (annotated)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (annotated slides).pdf"
+        "url": "2020_04 - Marzari Fireside 1 (annotated slides).pdf"
       }
     ]
   },
@@ -7077,19 +6997,16 @@
     ],
     "additional_resources": [
       {
-        "external": true,
-        "name": "Recording (high resolution, video+audio)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 2 (full video).mp4"
+        "name": "Recording",
+        "url": "2020_04 - Marzari Fireside 2 (full video).mp4"
       },
       {
-        "external": true,
         "name": "Recording (audio only)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 2 (audio only).m4a"
+        "url": "2020_04 - Marzari Fireside 2 (audio only).m4a"
       },
       {
-        "external": true,
-        "name": "Slides (original)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 2 (original slides).pdf"
+        "name": "Slides",
+        "url": "2020_04 - Marzari Fireside 2 (original slides).pdf"
       }
     ]
   },
@@ -7113,24 +7030,20 @@
     ],
     "additional_resources": [
       {
-        "external": true,
-        "name": "Recording (high resolution, video+audio)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (full video).mp4"
+        "name": "Recording",
+        "url": "2020_04 - Marzari Fireside 3 (full video).mp4"
       },
       {
-        "external": true,
         "name": "Recording (audio only)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (audio only).m4a"
+        "url": "2020_04 - Marzari Fireside 3 (audio only).m4a"
       },
       {
-        "external": true,
-        "name": "Slides (original)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (original slides).pdf"
+        "name": "Slides",
+        "url": "2020_04 - Marzari Fireside 3 (original slides).pdf"
       },
       {
-        "external": true,
         "name": "Slides (annotated)",
-        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (annotated slides).pdf"
+        "url": "2020_04 - Marzari Fireside 3 (annotated slides).pdf"
       }
     ]
   }
