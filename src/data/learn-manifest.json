@@ -655,7 +655,7 @@
     "description": "",
     "thumbnail_url": "reiher.png",
     "date": "2017-03-08",
-    "video_source_id": "kaXrWH8F1fcA",
+    "video_source_id": "zt_14CSLZqE",
     "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-reiher",
     "speakers": [
       {
@@ -675,7 +675,7 @@
     "description": "",
     "thumbnail_url": "littlewood.jpg",
     "date": "2017-03-06",
-    "video_source_id": "marvel_littlewood",
+    "video_source_id": "NSqnkTlv44k",
     "profile_url": null,
     "speakers": [
       {
@@ -735,7 +735,7 @@
     "description": "",
     "thumbnail_url": "ceder.jpg",
     "date": "2016-01-25",
-    "video_source_id": "marvel_ceder",
+    "video_source_id": "7WqOY82KTd4",
     "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-ceder",
     "speakers": [
       {
@@ -755,7 +755,7 @@
     "description": "",
     "thumbnail_url": "villars.jpeg",
     "date": "2015-11-11",
-    "video_source_id": "marvel_villars",
+    "video_source_id": "vNnxwc-i4Fg",
     "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-villars",
     "speakers": [
       {
@@ -775,7 +775,7 @@
     "description": "",
     "thumbnail_url": "levitov.jpg",
     "date": "2015-10-13",
-    "video_source_id": "marvel_levitov",
+    "video_source_id": "qTCZTFf2bNw",
     "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-levitov",
     "speakers": [
       {
@@ -795,7 +795,7 @@
     "description": "",
     "thumbnail_url": "yip.jpg",
     "date": "2015-08-31",
-    "video_source_id": "marvel_yip",
+    "video_source_id": "OnkiA7DvjbQ",
     "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-yip",
     "speakers": [
       {
@@ -2085,7 +2085,7 @@
     "description": "",
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
-    "video_source_id": "wQx0eRfBSz",
+    "video_source_id": "bjTUnHXZ6oY",
     "profile_url": null,
     "speakers": [
       {
@@ -4219,6 +4219,7 @@
     "slug": "2017-baroni-dft-fundamentals-from-theory-to-practice",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "DFT fundamentals: from theory to practice",
     "description": "Hohenberg-Kohn-Sham theory, variational principle, Hellman-Feynman theorem and energy derivatives.",
     "thumbnail_url": "efJj52RJSTcA.png",
@@ -4245,6 +4246,7 @@
     "slug": "2017-gebauer-implementation-of-dft-in-qe",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Implementation of DFT in QE",
     "description": "PPs, PWs, FFT, k-points.",
     "thumbnail_url": "B74aKUHPWg8E.png",
@@ -4297,6 +4299,7 @@
     "slug": "2017-giannozzi-dft-hands-on",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "DFT hands on",
     "description": "Total energy scf calculations, optimizations, bands, dos, and post-processing; insulators vs metals (k-points); SCs: defects, isolated systems, surfaces.",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4328,6 +4331,7 @@
     "slug": "2017-cococcioni-notable-failure-of-approximate-dft-and-possible-remedies-koopman",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Notable failure of approximate DFT and possible remedies. Koopmans, DFT+U",
     "description": "",
     "thumbnail_url": "BC0o5tNZXL9F.png",
@@ -4354,6 +4358,7 @@
     "slug": "2017-colonna-notable-failure-of-approximate-dft-and-possible-remedies-hybrids-vd",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Notable failure of approximate DFT and possible remedies. Hybrids, vdW, ACFDT",
     "description": "",
     "thumbnail_url": "NmFF5ovLpTf8.png",
@@ -4380,6 +4385,7 @@
     "slug": "2017-cococcioni-colonna-hands-on-advanced-dft-functionals",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: advanced DFT functionals",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4416,6 +4422,7 @@
     "slug": "2017-scandolo-basics-of-ab-initio-molecular-dynamics",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Basics of ab-initio Molecular Dynamics",
     "description": "Dynamics on the Born-Oppenheimer surface, energy conservation, ensembles, thermostats and barostats.",
     "thumbnail_url": null,
@@ -4436,6 +4443,7 @@
     "slug": "2017-scandolo-car-parrinello-molecular-dynamics",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Car-Parrinello Molecular Dynamics",
     "description": "Adiabaticity, metals, thermostats and barostats, correlation times and averages.",
     "thumbnail_url": null,
@@ -4456,6 +4464,7 @@
     "slug": "2017-dal-corso-linear-response-density-functional-perturbation-theory",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Linear Response, density-functional perturbation theory",
     "description": "",
     "thumbnail_url": "iTA9FoeHxqu3.png",
@@ -4482,6 +4491,7 @@
     "slug": "2017-dal-corso-phonon-calculations-and-thermodynamics",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Phonon calculations and thermodynamics",
     "description": "",
     "thumbnail_url": "5TofJegT7l9I.png",
@@ -4508,6 +4518,7 @@
     "slug": "2017-dal-corso-isaeva-palumbo-hands-on-dfpt-phonons-calculations-and-qha",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: DFPT, Phonons Calculations and QHA",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4554,6 +4565,7 @@
     "slug": "2017-ceresoli-vibrational-magnetic-spectroscopies-in-qe-nmr-and-epr",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Vibrational & Magnetic Spectroscopies in QE: NMR and EPR",
     "description": "",
     "thumbnail_url": "5m2imHUrj6BL.png",
@@ -4580,6 +4592,7 @@
     "slug": "2017-paulatto-vibrational-magnetic-spectroscopies-in-qe-ir-and-raman",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Vibrational & Magnetic Spectroscopies in QE: IR and RAMAN",
     "description": "",
     "thumbnail_url": "FcL2LuYNugz0.png",
@@ -4606,6 +4619,7 @@
     "slug": "2017-gebauer-spectroscopies-time-dependent-dfpt",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Spectroscopies: Time-Dependent DFPT",
     "description": "",
     "thumbnail_url": "SWFBb7cOaqKN.png",
@@ -4632,6 +4646,7 @@
     "slug": "2017-ferretti-spectroscopies-many-body-perturbation-theory",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Spectroscopies: Many-Body Perturbation Theory",
     "description": "",
     "thumbnail_url": "efDtiEoAJsCv.png",
@@ -4658,6 +4673,7 @@
     "slug": "2017-marini-many-body-perturbation-theory-using-the-yambo-code",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Many-Body Perturbation Theory Using the Yambo code",
     "description": "",
     "thumbnail_url": "FNJZuj1oxkj6.png",
@@ -4684,6 +4700,7 @@
     "slug": "2017-gebauer-timrov-hands-on-time-dependent-dfpt",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: Time-Dependent DFPT",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4715,6 +4732,7 @@
     "slug": "2017-marini-hands-on-gw-and-mbpt-calculations-using-qe-and-yambo",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: GW and MBPT calculations using QE and Yambo",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4741,6 +4759,7 @@
     "slug": "2017-andreussi-solvent-and-environment-effects-continuum-models",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Solvent and Environment Effects: Continuum Models",
     "description": "",
     "thumbnail_url": "UOGvGfSz4WBm.png",
@@ -4766,6 +4785,7 @@
     "slug": "2017-andreussi-timrov-hands-on-environment-effects-solvation-electrochemistry-pb",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: Environment Effects (Solvation, Electrochemistry, PBC) via Continuum Models",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4797,6 +4817,7 @@
     "slug": "2017-pizzi-introduction-to-aiida-the-ades-model-and-the-concept-of-provenance",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Introduction to AiiDA, the ADES model and the concept of provenance",
     "description": "",
     "thumbnail_url": "K5T0EY7hNMBH.png",
@@ -4823,6 +4844,7 @@
     "slug": "2017-pizzi-gargiulo-huber-hands-on-running-scf-calculations-in-qe-using-aiida-ba",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: Running SCF Calculations in QE using AiiDA (based on AiiDA v0.7.1)",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4886,6 +4908,7 @@
     "slug": "2017-ceriotti-advanced-molecular-dynamics-thermostats-barostats-and-nuclear-quan",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Advanced Molecular Dynamics. Thermostats, Barostats and Nuclear Quantum Effects",
     "description": "",
     "thumbnail_url": "5d84HvIaZLLK.png",
@@ -4912,6 +4935,7 @@
     "slug": "2017-ceriotti-petraglia-hands-on-advanced-molecular-dynamics-using-i-pi-and-qe",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Hands-on: Advanced Molecular Dynamics using i-PI and QE",
     "description": "",
     "thumbnail_url": "mcloud_logo_novideo2.png",
@@ -4943,6 +4967,7 @@
     "slug": "2017-de-gironcoli-giannozzi-levels-hierarchy-of-parallelism-in-qe",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Levels & Hierarchy of Parallelism in QE",
     "description": "",
     "thumbnail_url": "y3mb51938CtO.png",
@@ -4968,6 +4993,7 @@
     "slug": "2017-cavazzoni-evolution-of-present-and-future-hpc-architectures",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Evolution of Present and Future HPC Architectures",
     "description": "",
     "thumbnail_url": "9QoXgGtlwLWj.png",
@@ -4988,6 +5014,7 @@
     "slug": "2017-cavazzoni-evolution-of-parallel-programming-paradigms-for-exascale-computin",
     "type": "video",
     "parentId": "lfYatW",
+    "vidType": "slideshot",
     "title": "Evolution of Parallel Programming Paradigms for Exascale Computing Platforms",
     "description": "",
     "thumbnail_url": "bGv2oPkKiCbG.png",
@@ -5021,7 +5048,7 @@
     "description": "",
     "thumbnail_url": "LRnNWcge5S1X.png",
     "date": "2009-07-19",
-    "video_source_id": "k_z0LSrpuWQ0",
+    "video_source_id": "lZ5HhLxQ4TY",
     "profile_url": null,
     "speakers": [
       {
@@ -5041,7 +5068,7 @@
     "description": "",
     "thumbnail_url": "CkKgLHPWIEaM.png",
     "date": "2009-07-19",
-    "video_source_id": "kdVGDIzkfLEo",
+    "video_source_id": "b-Yh2NpH6b4",
     "profile_url": null,
     "speakers": [
       {
@@ -5061,7 +5088,7 @@
     "description": "(corrupted video, good audio)",
     "thumbnail_url": "4ExMGfocda5B.png",
     "date": "2009-07-20",
-    "video_source_id": "kpjKSalE_6wo",
+    "video_source_id": "cHvFSR1vbIE",
     "profile_url": null,
     "speakers": [
       {
@@ -5087,7 +5114,7 @@
     "description": "",
     "thumbnail_url": "7fXuZstHU0HC.png",
     "date": "2009-07-20",
-    "video_source_id": "kOuWdMTe-sRw",
+    "video_source_id": "Qva130rKj84",
     "profile_url": null,
     "speakers": [
       {
@@ -5113,7 +5140,7 @@
     "description": "",
     "thumbnail_url": "Gk718QTG2F5j.png",
     "date": "2009-07-20",
-    "video_source_id": "k76W2vhe0C28",
+    "video_source_id": "vEtz6z_Av1E",
     "profile_url": null,
     "speakers": [
       {
@@ -5139,7 +5166,7 @@
     "description": "",
     "thumbnail_url": "tgxZ1lBgv6OE.png",
     "date": "2009-07-20",
-    "video_source_id": "kTr375Zyt6Qg",
+    "video_source_id": "VLgla82lsFY",
     "profile_url": null,
     "speakers": [
       {
@@ -5165,7 +5192,7 @@
     "description": "",
     "thumbnail_url": "XG2WmTaX40UT.png",
     "date": "2009-07-20",
-    "video_source_id": "kvXmmDRWkTRk",
+    "video_source_id": "nJIhCzEagQs",
     "profile_url": null,
     "speakers": [
       {
@@ -5201,7 +5228,7 @@
     "description": "",
     "thumbnail_url": "H6vrgHocEAiU.png",
     "date": "2009-07-20",
-    "video_source_id": "klIzPsjVlEdg",
+    "video_source_id": "VeF3-hDVn8o",
     "profile_url": null,
     "speakers": [
       {
@@ -5221,7 +5248,7 @@
     "description": "",
     "thumbnail_url": "B3CaxKdj4ghm.png",
     "date": "2009-07-20",
-    "video_source_id": "k1V6WJl2NqQM",
+    "video_source_id": "6EHtMbWokV4",
     "profile_url": null,
     "speakers": [
       {
@@ -5241,7 +5268,7 @@
     "description": "",
     "thumbnail_url": "wWvlw0GsLXeY.png",
     "date": "2009-07-21",
-    "video_source_id": "kICK4wfbU2RA",
+    "video_source_id": "3T83FFnTAEg",
     "profile_url": null,
     "speakers": [
       {
@@ -5267,7 +5294,7 @@
     "description": "",
     "thumbnail_url": "6wLjnhtpBHE2.png",
     "date": "2009-07-21",
-    "video_source_id": "kr1B6iGcQsNE",
+    "video_source_id": "DxpIQSDDkUM",
     "profile_url": null,
     "speakers": [
       {
@@ -5293,7 +5320,7 @@
     "description": "",
     "thumbnail_url": "pFoojmKRba1G.png",
     "date": "2009-07-21",
-    "video_source_id": "kkHQ44etNga8",
+    "video_source_id": "3ehvGd8oxlA",
     "profile_url": null,
     "speakers": [
       {
@@ -5319,7 +5346,7 @@
     "description": "",
     "thumbnail_url": "SpoJPV10Aau9.png",
     "date": "2009-07-21",
-    "video_source_id": "kY2bfawqUsoU",
+    "video_source_id": "aZs2bGGew_o",
     "profile_url": null,
     "speakers": [
       {
@@ -5345,7 +5372,7 @@
     "description": "",
     "thumbnail_url": "KQginkGObrUQ.png",
     "date": "2009-07-21",
-    "video_source_id": "kqi7LkViAOxM",
+    "video_source_id": "xnCW0jhB8H0",
     "profile_url": null,
     "speakers": [
       {
@@ -5371,7 +5398,7 @@
     "description": "",
     "thumbnail_url": "uzttmyo2RGhJ.png",
     "date": "2009-07-21",
-    "video_source_id": "kHrmYL0MnqHY",
+    "video_source_id": "P3ZLHZVww9s",
     "profile_url": null,
     "speakers": [
       {
@@ -5423,7 +5450,7 @@
     "description": "",
     "thumbnail_url": "JosM7Yzq92G0.png",
     "date": "2009-07-22",
-    "video_source_id": "keC8aSjxTsHI",
+    "video_source_id": "TMf5FCx4Sac",
     "profile_url": null,
     "speakers": [
       {
@@ -5449,7 +5476,7 @@
     "description": "",
     "thumbnail_url": "zoyyaltuHSOM.png",
     "date": "2009-07-22",
-    "video_source_id": "kaTSnkJDbxLA",
+    "video_source_id": "nttwIEmbCfY",
     "profile_url": null,
     "speakers": [
       {
@@ -5475,7 +5502,7 @@
     "description": "",
     "thumbnail_url": "Ld76dKxNchSX.png",
     "date": "2009-07-22",
-    "video_source_id": "kr-zhqcpjcnY",
+    "video_source_id": "1ltSqQSrjSg",
     "profile_url": null,
     "speakers": [
       {
@@ -5501,7 +5528,7 @@
     "description": "",
     "thumbnail_url": "5w9NUZwJib1o.png",
     "date": "2009-07-22",
-    "video_source_id": "kwaJZW0_ZniQ",
+    "video_source_id": "_yeRa_gMO9Y",
     "profile_url": null,
     "speakers": [
       {
@@ -5532,7 +5559,7 @@
     "description": "",
     "thumbnail_url": "OVdqa6W18L9U.png",
     "date": "2009-07-22",
-    "video_source_id": "kqOCq890dAJw",
+    "video_source_id": "Zt75yTUaycs",
     "profile_url": null,
     "speakers": [
       {
@@ -5563,7 +5590,7 @@
     "description": "",
     "thumbnail_url": "CesKiUEiHyYE.png",
     "date": "2009-07-22",
-    "video_source_id": "kcQqultSTHhU",
+    "video_source_id": "og-cKnjFMGo",
     "profile_url": null,
     "speakers": [
       {
@@ -5609,7 +5636,7 @@
     "description": "",
     "thumbnail_url": "ZKJWNi34R39m.png",
     "date": "2009-07-23",
-    "video_source_id": "k0A7J-Nhy9Oo",
+    "video_source_id": "R_KrY1u1FDg&",
     "profile_url": null,
     "speakers": [
       {
@@ -5640,7 +5667,7 @@
     "description": "",
     "thumbnail_url": "euFoar5nztIO.png",
     "date": "2009-07-23",
-    "video_source_id": "ktJoNsng3NhM",
+    "video_source_id": "PfM1hMd5iJ4",
     "profile_url": null,
     "speakers": [
       {
@@ -5671,7 +5698,7 @@
     "description": "",
     "thumbnail_url": "AtanzrLe52lm.png",
     "date": "2009-07-23",
-    "video_source_id": "kdzpgB8rcVR4",
+    "video_source_id": "5VuF9gK9kqY",
     "profile_url": null,
     "speakers": [
       {
@@ -5702,7 +5729,7 @@
     "description": "",
     "thumbnail_url": "0flyB7GduiHZ.png",
     "date": "2009-07-23",
-    "video_source_id": "kl1hp7oszCcs",
+    "video_source_id": "epdaJYa1zdA",
     "profile_url": null,
     "speakers": [
       {
@@ -5733,7 +5760,7 @@
     "description": "",
     "thumbnail_url": "InS0pfNmZ5Y0.png",
     "date": "2009-07-23",
-    "video_source_id": "kxU9vuLhbeLg",
+    "video_source_id": "xPJU386R1bA",
     "profile_url": null,
     "speakers": [
       {
@@ -5764,7 +5791,7 @@
     "description": "",
     "thumbnail_url": "7Mi9Cdk8vsBo.png",
     "date": "2009-07-23",
-    "video_source_id": "kh9gtSfaSiZY",
+    "video_source_id": "Yvl4wMGLMFQ",
     "profile_url": null,
     "speakers": [
       {
@@ -5790,7 +5817,7 @@
     "description": "",
     "thumbnail_url": "iPQMBWiRF9DD.png",
     "date": "2009-07-23",
-    "video_source_id": "k4vJr8lQj3hw",
+    "video_source_id": "wpZ0CmFyKvE",
     "profile_url": null,
     "speakers": [
       {
@@ -5816,7 +5843,7 @@
     "description": "",
     "thumbnail_url": "VS7fbequyUlm.png",
     "date": "2009-07-24",
-    "video_source_id": "k3ZI_lLoHJvE",
+    "video_source_id": "1GvpFw8UqA4",
     "profile_url": null,
     "speakers": [
       {
@@ -5847,7 +5874,7 @@
     "description": "",
     "thumbnail_url": "q2naqFBVbZ1f.png",
     "date": "2009-07-24",
-    "video_source_id": "kFnj5l1ChLwA",
+    "video_source_id": "YrkXQO2qCFo",
     "profile_url": null,
     "speakers": [
       {
@@ -5878,7 +5905,7 @@
     "description": "",
     "thumbnail_url": "6mAQtxJfeax7.png",
     "date": "2009-07-24",
-    "video_source_id": "ki5MnaLb-5bU",
+    "video_source_id": "vDDIoJm1I48",
     "profile_url": null,
     "speakers": [
       {
@@ -5909,7 +5936,7 @@
     "description": "",
     "thumbnail_url": "ljGOwgOxwiFk.png",
     "date": "2009-07-24",
-    "video_source_id": "kYxgGjutvl_g",
+    "video_source_id": "8SYqljGFmgc",
     "profile_url": null,
     "speakers": [
       {
@@ -5940,7 +5967,7 @@
     "description": "",
     "thumbnail_url": "HNK4l3GWEKn7.png",
     "date": "2009-07-25",
-    "video_source_id": "kWWT2nL8Kuss",
+    "video_source_id": "8fcTvB8uQn4",
     "profile_url": null,
     "speakers": [
       {
@@ -5976,7 +6003,7 @@
     "description": "",
     "thumbnail_url": "0rUPmOgeZtXA.png",
     "date": "2009-07-25",
-    "video_source_id": "kKTYEHv2o77M",
+    "video_source_id": "0Fam7RDP55E",
     "profile_url": null,
     "speakers": [
       {
@@ -6012,7 +6039,7 @@
     "description": "",
     "thumbnail_url": "SEm34IUQBp6I.png",
     "date": "2009-07-27",
-    "video_source_id": "ker--mzsnDhk",
+    "video_source_id": "mVeVm82AJpQ",
     "profile_url": null,
     "speakers": [
       {
@@ -6038,7 +6065,7 @@
     "description": "",
     "thumbnail_url": "fPDpoy3khNBK.png",
     "date": "2009-07-27",
-    "video_source_id": "kKubxHA11oc4",
+    "video_source_id": "NzFjG6qkTZ0",
     "profile_url": null,
     "speakers": [
       {
@@ -6064,7 +6091,7 @@
     "description": "",
     "thumbnail_url": "6FqXEqrTcfwI.png",
     "date": "2009-07-27",
-    "video_source_id": "kldmSueQOvq4",
+    "video_source_id": "q_XkUoJ9oo8",
     "profile_url": null,
     "speakers": [
       {
@@ -6090,7 +6117,7 @@
     "description": "",
     "thumbnail_url": "tBEF2EvSD9o2.png",
     "date": "2009-07-27",
-    "video_source_id": "kl4f-GpUG8rU",
+    "video_source_id": "SvNiDVaMhKc",
     "profile_url": null,
     "speakers": [
       {
@@ -6152,7 +6179,7 @@
     "description": "",
     "thumbnail_url": "AZDXSc7FZGPv.png",
     "date": "2009-07-28",
-    "video_source_id": "keYhtZQ5DpeY",
+    "video_source_id": "wPCCgzjevW4",
     "profile_url": null,
     "speakers": [
       {
@@ -6178,7 +6205,7 @@
     "description": "",
     "thumbnail_url": "JehgpoVIhmAA.png",
     "date": "2009-07-28",
-    "video_source_id": "kfZVCqUw8Zb0",
+    "video_source_id": "wO7ihwEpcIw",
     "profile_url": null,
     "speakers": [
       {
@@ -6204,7 +6231,7 @@
     "description": "(corrupted video, good audio)",
     "thumbnail_url": "wX1JxJDkOwvR.png",
     "date": "2009-07-28",
-    "video_source_id": "kHW0HIlqrqWE",
+    "video_source_id": "Swc9MkgPhCI",
     "profile_url": null,
     "speakers": [
       {
@@ -6230,7 +6257,7 @@
     "description": "",
     "thumbnail_url": "O5snL0UFj0C3.png",
     "date": "2009-07-28",
-    "video_source_id": "korrZKLdeI70",
+    "video_source_id": "BSw5yTijkG0",
     "profile_url": null,
     "speakers": [
       {
@@ -6292,7 +6319,7 @@
     "description": "",
     "thumbnail_url": "JBB0lTPtd2dU.png",
     "date": "2009-07-29",
-    "video_source_id": "kYj7cHZX0k7s",
+    "video_source_id": "EUBOLMafX0U",
     "profile_url": null,
     "speakers": [
       {
@@ -6318,7 +6345,7 @@
     "description": "",
     "thumbnail_url": "b1pTwOmrPknb.png",
     "date": "2009-07-29",
-    "video_source_id": "k_--ELxL94mI",
+    "video_source_id": "HY1LGZdbsO0",
     "profile_url": null,
     "speakers": [
       {
@@ -6344,7 +6371,7 @@
     "description": "",
     "thumbnail_url": "D0XZYyMuXYVy.png",
     "date": "2009-07-29",
-    "video_source_id": "k-CPFwMbUNtw",
+    "video_source_id": "g4_HJw5jbvY",
     "profile_url": null,
     "speakers": [
       {
@@ -6370,7 +6397,7 @@
     "description": "",
     "thumbnail_url": "nvMidDtPj0rz.png",
     "date": "2009-07-29",
-    "video_source_id": "k4cINb4uPgeg",
+    "video_source_id": "3-0K-AM8VeM",
     "profile_url": null,
     "speakers": [
       {
@@ -6396,7 +6423,7 @@
     "description": "Introduction to NMR spectroscopy. Chemical shift, electric field gradients. How to analyze the results and compare to experiments. Implementation: GIPAW formalism and extension to solids.",
     "thumbnail_url": "B63rlGXNuxRH.png",
     "date": "2009-07-30",
-    "video_source_id": "kTcQsE2Vhg1M",
+    "video_source_id": "ir4GxNKQnOc",
     "profile_url": null,
     "speakers": [
       {
@@ -6422,7 +6449,7 @@
     "description": "Introduction to NMR spectroscopy. Chemical shift, electric field gradients. How to analyze the results and compare to experiments. Implementation: GIPAW formalism and extension to solids.",
     "thumbnail_url": "7kFhz18uUDW0.png",
     "date": "2009-07-30",
-    "video_source_id": "k8Y8Wem8afn8",
+    "video_source_id": "0L3RliYqOMQ",
     "profile_url": null,
     "speakers": [
       {
@@ -6448,7 +6475,7 @@
     "description": "Introduction to EPR spectroscopy. The spin hamiltonian. Calculation of EPR parameters: g-tensor and hyperfine couplings. Examples. Converse approach to NMR and EPR spectroscopy. How to run the code, generation of GIPAW pseudopotentials, how to analyze the output.",
     "thumbnail_url": "KtWGaKnsOFZP.png",
     "date": "2009-07-30",
-    "video_source_id": "kHeY1W3NxXR4",
+    "video_source_id": "uzvFqK7lI2Q",
     "profile_url": null,
     "speakers": [
       {
@@ -6515,7 +6542,7 @@
     "description": "Reciprocal space expressions for the spread, maximal localization, Wannier functions of a composite manifold of bands. The case of metals, and disentanglement of submanifolds to be localized.",
     "thumbnail_url": "LM8AZif0JWVC.png",
     "date": "2009-07-31",
-    "video_source_id": "k99q1cF7Mp2A",
+    "video_source_id": "yy-pgh6O-X0",
     "profile_url": null,
     "speakers": [
       {
@@ -6541,7 +6568,7 @@
     "description": "Reciprocal space expressions for the spread, maximal localization, Wannier functions of a composite manifold of bands. The case of metals, and disentanglement of submanifolds to be localized.",
     "thumbnail_url": "mVpYMU410vCZ.png",
     "date": "2009-07-31",
-    "video_source_id": "kiKJY87REK_I",
+    "video_source_id": "P61Ce-e1U0Q",
     "profile_url": null,
     "speakers": [
       {
@@ -6567,7 +6594,7 @@
     "description": "Reciprocal space expressions for the spread, maximal localization, Wannier functions of a composite manifold of bands. The case of metals, and disentanglement of submanifolds to be localized.",
     "thumbnail_url": "iCiyNe806OhU.png",
     "date": "2009-07-31",
-    "video_source_id": "kvBd69FeBrZw",
+    "video_source_id": "HKoB6FYnI8A",
     "profile_url": null,
     "speakers": [
       {
@@ -6593,7 +6620,7 @@
     "description": "Wannier functions and their relation with chemically intuitive concepts. Formal connection with the modern theory of polarization, and magnetization. Use of Wannier functions as accurate and efficient interpolators. Wannier functions as building blocks of large-scale Hamiltonians, and to construct Green's functions and self-energy in the Landauer formalism.",
     "thumbnail_url": "rk9dVV3TwAX0.png",
     "date": "2009-07-31",
-    "video_source_id": "kynYHtpqnS8g",
+    "video_source_id": "UTMXPpvi5Y0",
     "profile_url": null,
     "speakers": [
       {
@@ -6619,7 +6646,7 @@
     "description": "Wannier functions and their relation with chemically intuitive concepts. Formal connection with the modern theory of polarization, and magnetization. Use of Wannier functions as accurate and efficient interpolators. Wannier functions as building blocks of large-scale Hamiltonians, and to construct Green's functions and self-energy in the Landauer formalism.",
     "thumbnail_url": "3svw5qHE1P1L.png",
     "date": "2009-07-31",
-    "video_source_id": "kWPh3K8tRx4Q",
+    "video_source_id": "v-iRb2IJels",
     "profile_url": null,
     "speakers": [
       {
