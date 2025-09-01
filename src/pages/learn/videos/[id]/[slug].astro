@@ -1,8 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import { Download } from "lucide-astro";
 
 import fs from "fs";
 import path from "path";
+
+const BASE_DOWNLOAD = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/`;
 
 const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
 const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
@@ -54,10 +57,12 @@ breadcrumbs.push({
   name: video.title,
   href: `/learn/videos/${video.id}/${video.slug}`,
 });
+
+const title = video.title;
 ---
 
 <!-- We add a little bit more max width to make slideshot vids look a little nicer. -->
-<Layout title={id} breadcrumbs={breadcrumbs} maxWidth="max-w-[1400px]">
+<Layout title={title} breadcrumbs={breadcrumbs} maxWidth="max-w-[1400px]">
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">{video.title}</h3>
@@ -65,41 +70,77 @@ breadcrumbs.push({
     </section>
   </div>
 
-  <p>{video.description}</p>
-  <div class="entry-description mt-2">
-    Date:{" "}
+  <!-- Entry information -->
+  <section class="space-y-4 px-2">
+    <p>
+      {
+        video.speakers && video.speakers.length > 0 && (
+          <div class="video-author mt-2 italic">
+            {video.speakers.map((speaker, index) => (
+              <>
+                Speakers:
+                <span>
+                  {speaker.title ? speaker.title + " " : ""}
+                  {speaker.first_name} {speaker.last_name}
+                  {index < video.speakers.length - 1 ? ", " : ""}
+                </span>
+                {video.profile_url && (
+                  <a
+                    href={video.profile_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:underline"
+                  >
+                    Event Profile
+                  </a>
+                )}
+              </>
+            ))}
+          </div>
+        )
+      }
+    </p>
+
+    <div class="entry-description text-gray-500">
+      Date:{" "}
+      {
+        new Date(video.date).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      }{" "}
+    </div>
+
+    <!-- Video description -->
     {
-      new Date(video.date).toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })
-    }{" "}
-  </div><p>
-    {
-      video.speakers && video.speakers.length > 0 && (
-        <div class="video-author mt-2">
-          {video.speakers.map((speaker, index) => (
-            <>
-              <span>
-                {speaker.title ? speaker.title + " " : ""}
-                {speaker.first_name} {speaker.last_name}
-                {index < video.speakers.length - 1 ? ", " : ""}
-              </span>
-              <a
-                href={video.profile_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Event Profile
-              </a>
-            </>
-          ))}
+      video.description && (
+        <div class="entry-description">
+          <b>Description: </b>
+          <span set:html={video.description} />
         </div>
       )
     }
-  </p>
 
+    <!-- Additional resources -->
+    {
+      video.additional_resources &&
+        video.additional_resources.map((res) => (
+          <a
+            href={`${BASE_DOWNLOAD}${video.id}/${res.url}`}
+            download
+            target="_blank"
+            class="flex items-center space-x-1 hover:underline"
+          >
+            <Download class="w-4 h-4 mr-1 fill-current" />
+
+            <span>{res.name}</span>
+          </a>
+        ))
+    }
+  </section>
+
+  <!-- Entry video -->
   {
     video.video_source_id && (
       <section class="pt-4 border-t border-gray-300 mb-6 mt-4 flex flex-col items-center text-center">
