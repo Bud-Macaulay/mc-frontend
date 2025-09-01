@@ -1,11 +1,13 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import { Download } from "lucide-astro";
-
 import fs from "fs";
 import path from "path";
 
-const BASE_DOWNLOAD = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/`;
+import { Download } from "lucide-astro";
+
+import Layout from "@layouts/Layout.astro";
+
+// import { PUBLIC_FILES_BASE } from "astro:env/client";
+const PUBLIC_FILES_BASE = import.meta.env.PUBLIC_FILES_BASE || "/";
 
 const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
 const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
@@ -61,7 +63,7 @@ breadcrumbs.push({
 const title = video.title;
 ---
 
-<!-- We add a little bit more max width to make slideshot vids look a little nicer. -->
+<!-- tailwind maxwidth increase to fit video player. -->
 <Layout title={title} breadcrumbs={breadcrumbs} maxWidth="max-w-[1400px]">
   <div class="space-y-10">
     <section class="space-y-4">
@@ -127,7 +129,7 @@ const title = video.title;
       video.additional_resources &&
         video.additional_resources.map((res) => (
           <a
-            href={`${BASE_DOWNLOAD}${video.id}/${res.url}`}
+            href={`${PUBLIC_FILES_BASE}${video.id}/${res.url}`}
             download
             target="_blank"
             class="flex items-center space-x-1 hover:underline"

@@ -2,10 +2,9 @@
 // Similar to BannerList but with some additional
 //  fields for speaker, file links etc.
 import { Play, Download, CirclePlay } from "lucide-astro";
+const PUBLIC_FILES_BASE = import.meta.env.PUBLIC_FILES_BASE || "/";
 
 const { entries, rootPath } = Astro.props;
-
-const BASE_DOWNLOAD = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/`;
 ---
 
 <div class="entries-container">
@@ -46,7 +45,8 @@ const BASE_DOWNLOAD = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/`
 
             <div class="entry-info-container">
               <a href={href} class="entry-title hover:underline">
-                {entries.length - index}. {entry.title}{" "}
+                {/* {entries.length - index}. {entry.title}{" "} */}
+                {entry.title}
               </a>
               {entry.speakers && entry.speakers.length > 0 && (
                 <div class="entry-author italic ml-2">
@@ -94,7 +94,7 @@ const BASE_DOWNLOAD = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/`
                 {entry.additional_resources &&
                   entry.additional_resources.map((res) => (
                     <a
-                      href={`${BASE_DOWNLOAD}${entry.id}/${res.url}`}
+                      href={`${PUBLIC_FILES_BASE}${entry.id}/${res.url}`}
                       download
                       target="_blank"
                       class="flex items-center space-x-1 hover:underline"
