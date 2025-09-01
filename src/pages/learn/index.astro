@@ -1,0 +1,100 @@
+---
+import Layout from "@layouts/Layout.astro";
+import LearnBannerList from "@components/LearnBannerList.astro";
+import SquareButtonList from "@components/SquareButtonList.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Learn", href: "learn" },
+];
+
+const file = fs.readFileSync("./src/data/learn-topsections.yml", "utf8");
+const data = yaml.load(file);
+
+// learn external buttons
+const learnButtons = [
+  {
+    href: "https://www.lhumos.org/",
+    img: "images/logos/lhumos_temp.png",
+    title: "",
+    subtitle: "Learning Hub for Modelling and Simulation",
+  },
+  {
+    href: "https://www.osscar.org/",
+    img: "images/osscar-logo.svg",
+    title: "",
+    subtitle: "Open Software Services for Classrooms and Research",
+  },
+];
+---
+
+<!-- search script -->
+<script type="module">
+  const form = document.getElementById("searchForm");
+  const input = document.getElementById("searchInput");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const query = input.value.trim();
+    if (query) {
+      window.location.href = `/learn/search?query=${encodeURIComponent(query)}`;
+    }
+  });
+</script>
+
+<!-- main content -->
+<Layout breadcrumbs={breadcrumbs} title="Learn">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Associated educational platforms</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <SquareButtonList
+        buttons={learnButtons}
+        containerMargin={"mx-50"}
+        numCols={2}
+        aspectRatio="5/1"
+        imgSize="w-32 h-16"
+      />
+    </section>
+
+    <!-- heading and search button -->
+    <section class="flex items-center justify-between mb-4">
+      <h3 class="text-2xl">Materials Cloud legacy learn</h3>
+
+      <form
+        id="searchForm"
+        class="flex border border-gray-300 rounded-lg overflow-hidden shadow-sm"
+      >
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search..."
+          class="flex-1 px-4 py-2"
+        />
+        <button type="submit" class="explore-button"> Search </button>
+      </form>
+    </section>
+
+    <hr class="border-t border-gray-300 mb-6" />
+  </div>
+
+  <p class="px-2 pb-2 italic text-gray-700">
+    The Materials Cloud Learn has entered an archival state. All new content
+    will be added to the Lhumos platform instead.
+  </p>
+
+  <p class="px-2 pb-2">
+    Lecture recordings and video tutorials on computational materials science
+    for students and experts alike. You can find more videos on the <a
+      href="https://www.youtube.com/materialscloud"
+      target="_blank"
+      >Materials Cloud Youtube channel.
+    </a>
+  </p>
+
+  <LearnBannerList entries={data.entries} rootPath="learn/sections" />
+</Layout>

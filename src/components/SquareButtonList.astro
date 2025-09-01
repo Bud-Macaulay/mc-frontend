@@ -22,7 +22,7 @@ const {
   buttons,
   numCols,
   shadow = "shadow hover:shadow-lg",
-  bgColor = "bg-slate-50 hover:bg-slate-100",
+  bgColor = null,
   imgSize = "w-32 h-32",
   rowGap = "gap-y-6",
   colGap = "gap-x-6",
@@ -54,9 +54,13 @@ const gridTemplateStyle = numCols
 const aspectClass = ratioMap[aspectRatio] || "aspect-square";
 
 // Button style
-const buttonStyle = `group block flex flex-col justify-center items-center text-center 
-${aspectClass} ${bgColor} no-underline hover:no-underline 
-${shadow} transition`;
+const defaultBg = "bg-[var(--entry-bg)] hover:bg-[var(--entry-hover-bg)]";
+const bgCol = bgColor ?? defaultBg;
+
+const buttonStyle = `
+  group block flex flex-col justify-center items-center text-center
+  ${aspectClass} ${bgCol} no-underline hover:no-underline
+  ${shadow} transition`;
 
 const imgStyle = `${imgSize} object-contain`;
 ---

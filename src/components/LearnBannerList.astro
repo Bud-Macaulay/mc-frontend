@@ -1,7 +1,7 @@
 ---
 // Similar to BannerList but with some additional
 //  fields for speaker, file links etc.
-import { Play, Download } from "lucide-astro";
+import { Play, Download, CirclePlay } from "lucide-astro";
 
 const { entries, rootPath } = Astro.props;
 
@@ -11,27 +11,37 @@ const BASE_DOWNLOAD = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/`
 <div class="entries-container">
   {
     entries.map((entry, index) => {
-      const isVideo = entry.type === "video";
-      const href = isVideo
+      const isBottomLevel = entry.type === "video";
+      const isVideo = entry.video_source_id;
+      const href = isBottomLevel
         ? `learn/videos/${entry.id}/${entry.slug}`
         : `learn/sections/${entry.id}/${entry.slug}`;
 
-      if (isVideo) {
+      if (isBottomLevel) {
         return (
           <div class="entry-container items-center">
             {/* Media Section */}
             <div class="flex flex-col items-center w-48">
               <a href={href}>
                 <img
-                  src={`images/learn/${entry.thumbnail_url}`}
+                  src={`/images/learn/${entry.thumbnail_url}`}
                   alt={entry.title}
                   class="entry-image max-w-48 max-h-48 w-auto h-auto object-cover"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                 />
+                {/* on thumbnail error we render an astro play */}
+                <div class="hidden items-center justify-center w-48 h-48 bg-gray-100 rounded">
+                  <CirclePlay class="w-32 h-32 text-gray-500" />
+                </div>
               </a>
-              <a href={href} class="explore-button mt-2 flex items-center">
-                <Play class="w-4 h-4 mr-1 fill-current" />
-                WATCH
-              </a>
+
+              {/* Only render WATCH if video_source_id is not null */}
+              {isVideo && (
+                <a href={href} class="explore-button mt-2 flex items-center">
+                  <Play class="w-4 h-4 mr-1 fill-current" />
+                  WATCH
+                </a>
+              )}
             </div>
 
             <div class="entry-info-container">

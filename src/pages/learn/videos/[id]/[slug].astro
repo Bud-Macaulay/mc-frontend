@@ -56,7 +56,8 @@ breadcrumbs.push({
 });
 ---
 
-<Layout title={id} breadcrumbs={breadcrumbs}>
+<!-- We add a little bit more max width to make slideshot vids look a little nicer. -->
+<Layout title={id} breadcrumbs={breadcrumbs} maxWidth="max-w-[1400px]">
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">{video.title}</h3>
@@ -104,8 +105,8 @@ breadcrumbs.push({
       <section class="pt-4 border-t border-gray-300 mb-6 mt-4 flex flex-col items-center text-center">
         {video.vidType === "slideshot" ? (
           <iframe
-            width="900"
-            height="1050"
+            width="1200"
+            height="600"
             src={`https://slideshot.epfl.ch/eplay/${video.video_source_id}`}
             title={video.title}
             frameborder="0"
@@ -113,8 +114,8 @@ breadcrumbs.push({
           />
         ) : (
           <iframe
-            width="800"
-            height="450"
+            width="1100"
+            height="619"
             src={`https://www.youtube.com/embed/${video.video_source_id}`}
             title={video.title}
             frameborder="0"

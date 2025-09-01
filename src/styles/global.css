@@ -2,15 +2,29 @@
 
 @layer components {
   /* 
-  For consistancy between banner-styled lists (tools/discover/learn)
-  While learn uses a slightly different component they both inherit these classes.
+  we use .entry/.entries format banner-styled lists (tools/discover/learn)
+  While LearnBanner and SquareButtonList uses a slightly different component they both inherit color from 
+  these classes.
   */
+
+  /* common color */
+  :root {
+    --entry-bg: theme("colors.slate.50");
+    --entry-hover-bg: theme("colors.slate.100");
+  }
+
   .entries-container {
     @apply space-y-4 p-2;
   }
   .entry-container {
-    @apply flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm hover:shadow-lg transition-shadow duration-200;
+    background-color: var(--entry-bg);
+    @apply flex gap-4 p-4 rounded-xs shadow-sm hover:shadow-lg transition-shadow duration-200;
   }
+
+  .entry-container:hover {
+    background-color: var(--entry-hover-bg);
+  }
+
   .entry-flex-shrink {
     @apply flex-shrink-0;
   }

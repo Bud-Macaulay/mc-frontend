@@ -1,0 +1,117 @@
+---
+// populate search entries on /learn/search via a div container and a
+// singular listener js script.
+
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout
+  title="Search Results"
+  breadcrumbs={[
+    { name: "Home", href: "/" },
+    { name: "Learn", href: "/learn" },
+    { name: "Search", href: "#" },
+  ]}
+>
+  <h2 class="text-2xl mb-4" id="searchHeading">Search results</h2>
+
+  <div id="searchContainer" class="entries-container">
+    {
+      Array.from({ length: 20 }).map(() => (
+        <div class="entry-container opacity-0">
+          <div class="entry-flex">
+            <a href="#">
+              <img src="images/placeholder.png" class="entry-image w-30" />
+            </a>
+          </div>
+          <div class="entry-info-container">
+            <a href="#" class="entry-title hover:underline" />
+            <div class="entry-description pt-1 pl-1">
+              <span />
+            </div>
+            <div class="entry-author italic ml-2" />
+            <div class="entry-additional-resources flex items-center space-x-4" />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <script type="module">
+    import { search, data } from "/src/components/search.js";
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("searchContainer");
+      const placeholders = container.querySelectorAll(".entry-container");
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get("query") || "";
+      const results = query ? search(data, query) : data;
+
+      results.forEach((entry, i) => {
+        if (i >= placeholders.length) return;
+        const el = placeholders[i];
+
+        // Determine href based on type
+        let href = "#";
+        if (entry.type === "video") {
+          href = `/learn/videos/${entry.id}/${entry.slug}`;
+        } else {
+          href = `/learn/sections/${entry.id}/${entry.slug}`;
+        }
+
+        // Set link & thumbnail
+        const link = el.querySelector(".entry-flex a");
+        if (link) link.href = href;
+
+        const img = el.querySelector(".entry-flex img");
+        if (img) {
+          img.src = entry.thumbnail_url
+            ? `/images/learn/${entry.thumbnail_url}`
+            : "images/placeholder.png";
+          img.alt = entry.title || "";
+        }
+
+        // Title link
+        const titleLink = el.querySelector(".entry-title");
+        if (titleLink) {
+          titleLink.textContent = entry.title || "";
+          titleLink.href = href;
+        }
+
+        // Description
+        const desc = el.querySelector(".entry-description span");
+        if (desc) desc.innerHTML = entry.description || "";
+
+        // Authors / speakers
+        const authorDiv = el.querySelector(".entry-author");
+        if (authorDiv && entry.speakers) {
+          authorDiv.textContent = entry.speakers
+            .map((s) => `${s.title || ""} ${s.first_name} ${s.last_name}`)
+            .join(", ");
+        }
+
+        // Additional resources
+        const resDiv = el.querySelector(".entry-additional-resources");
+        if (resDiv && entry.additional_resources) {
+          resDiv.innerHTML = "";
+          entry.additional_resources.forEach((r) => {
+            const a = document.createElement("a");
+            a.href = `https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/${entry.id}/${r.url}`;
+            a.download = "";
+            a.textContent = r.name;
+            a.className = "hover:underline";
+            resDiv.appendChild(a);
+          });
+        }
+
+        el.style.opacity = 1;
+      });
+
+      // Hide unused placeholders
+      for (let i = results.length; i < placeholders.length; i++) {
+        placeholders[i].style.display = "none";
+      }
+    });
+  </script>
+</Layout>
