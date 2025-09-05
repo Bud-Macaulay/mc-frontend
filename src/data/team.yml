@@ -74,18 +74,12 @@ coreDevelopers:
     websites:
       - url: "https://people.epfl.ch/roberto.bendinelli?lang=en"
         label: "epfl.ch"
-  - name: "Dou Du"
-    img: "images/team/dou_du.png"
-    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
-    websites:
-      - url: "https://people.epfl.ch/dou.du?lang=en"
-        label: "epfl.ch"
   - name: "Kristjan Eimre"
     img: "images/team/kristjan_eimre.png"
-    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
+    title: "PostDoc, Materials Software and Data Group, PSI"
     websites:
-      - url: "https://people.epfl.ch/kristjan.eimre?lang=en"
-        label: "epfl.ch"
+      - url: "https://www.psi.ch/en/lms/people/kristjan-eimre"
+        label: "psi.ch"
   - name: "Guillaume Fraux"
     img: "images/team/guillaume_fraux.png"
     title: "PostDoc Research Scientist, Laboratory of Computational Science and Modelling, EPFL"
@@ -98,12 +92,12 @@ coreDevelopers:
     websites:
       - url: "https://people.epfl.ch/198324?lang=en"
         label: "epfl.ch"
-  - name: "François Liot"
-    img: "images/team/francois_liot.png"
-    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
+  - name: "Bud Macaulay"
+    img: "images/team/bud_macaulay.jpg"
+    title: "PostDoc, Materials Software and Data Group, PSI"
     websites:
-      - url: "http://people.epfl.ch/francois.liot?lang=en"
-        label: "epfl.ch"
+      - url: "https://www.psi.ch/en/lms/people/bud-macaulay"
+        label: "psi.ch"
   - name: "Xing Wang"
     img: "images/team/xing_wang.png"
     title: "PostDoc, Materials Software and Data Group, PSI"
@@ -120,5 +114,5 @@ coreDevelopers:
     img: "images/team/jusong_yu.jpg"
     title: "PostDoc, Materials Software and Data Group, PSI"
     websites:
-      - url: "https://www.psi.ch/de/lms/people/jusong-yu"
+      - url: "https://www.psi.ch/en/lms/people/jusong-yu"
         label: "psi.ch"
