@@ -2,8 +2,12 @@
 import Layout from "@layouts/Layout.astro";
 import LearnBannerList from "@components/LearnBannerList.astro";
 
+import { Download } from "lucide-astro";
+
 import fs from "fs";
 import path from "path";
+
+// import { PUBLIC_FILES_BASE } from "astro:env/client";
 
 const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
 
@@ -72,13 +76,28 @@ const title = pageData.title;
     <section class="space-y-4">
       <h3 class="text-2xl">{pageData.title}</h3>
       <hr class="border-t border-gray-300 mb-6" />
-    </section>
-  </div>
-  <p>{pageData.description}</p>
+      <p>{pageData.description}</p>
 
-  {
-    children.length > 0 && (
-      <LearnBannerList entries={children} rootPath="work/tools" />
-    )
-  }
+      <!-- Additional resources -->
+      {
+        pageData.additional_resources &&
+          pageData.additional_resources.map((res) => (
+            <a
+              href={`${res.url}`}
+              target="_blank"
+              class="flex items-center space-x-1 hover:underline"
+            >
+              <Download class="w-4 h-4 mr-1 fill-current" />
+
+              <span>{res.name}</span>
+            </a>
+          ))
+      }
+    </section>
+    {
+      children.length > 0 && (
+        <LearnBannerList entries={children} rootPath="work/tools" />
+      )
+    }
+  </div>
 </Layout>

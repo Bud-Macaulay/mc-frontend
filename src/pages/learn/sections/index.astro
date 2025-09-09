@@ -12,9 +12,6 @@ const breadcrumbs = [
 const file = fs.readFileSync("./src/data/learn-topsections.yml", "utf8");
 const data = yaml.load(file);
 
-const buttonStyle =
-  "px-2 py-1 bg-blue-800 text-white text-md rounded hover:bg-blue-900";
-
 const headingStyle =
   "submenu-title text-lg font-semibold text-gray-900 hover:underline";
 
@@ -26,11 +23,6 @@ const linkStyle = "flex-shrink-0 block w-24 h-16 overflow-hidden rounded";
 const imageStyle = "object-contain w-full h-full w-36 h-36";
 ---
 
-<!-- <Layout title="Learn" breadcrumbs={breadcrumbs}>
-  <div class="space-y-10">
-    <section class="space-y-4">
-      <h3 class="text-3xl">Learn with videos and slides</h3>
-      <hr class="border-t border-gray-300 mb-6" /> -->
 <Layout title="Learn" breadcrumbs={breadcrumbs}>
   <div class="space-y-10">
     <section class="space-y-4">

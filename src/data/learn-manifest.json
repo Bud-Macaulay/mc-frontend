@@ -6703,7 +6703,13 @@
     "parentId": "kpbmzt",
     "title": "Wannier 2022 Summer School, ICTP (Trieste, Italy)",
     "description": "School on the theory and applications of Wannier functions, 16-20 May 2022",
-    "thumbnail_url": "wannier90-logo.png"
+    "thumbnail_url": "wannier90-logo.png",
+    "additional_resources": [
+      {
+        "name": "External link",
+        "url": "https://indico.ictp.it/event/9789/other-view?view=ictptimetable"
+      }
+    ]
   },
   {
     "id": "dfbgWv",
@@ -6711,8 +6717,14 @@
     "type": "subsection",
     "parentId": "kpbmzt",
     "title": "Wannier 2022 Developers Meeting, ICTP (Trieste, Italy)",
-    "description": "Developers meeting for Wannier90 and the codes associated to the Wannier ecosystem, 23-27 May 2022",
-    "thumbnail_url": "wannier90-logo.png"
+    "description": "Developers meeting for Wannier90 and the codes associated to the Wannier ecosystem held at the International Center of Theoretical Physics in Trieste (Italy) on 23-27 May 2022. Please find at the link below the ICTP website with videos and slides of the presentations.",
+    "thumbnail_url": "wannier90-logo.png",
+    "additional_resources": [
+      {
+        "name": "External link",
+        "url": "https://indico.ictp.it/event/9851/other-view?view=ictptimetable"
+      }
+    ]
   },
   {
     "id": "C8ad91",
