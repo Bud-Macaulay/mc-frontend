@@ -29,9 +29,8 @@ const tabs = [
 ];
 
 const buttonStyle = `
-  flex flex-1 flex-col items-center justify-center
-  px-4 py-2
-  font-semibold text-indigo-200
+  flex flex-1 flex-col items-center justify-center py-2
+  font-semibold text-[#3E70BB]
   cursor-pointer
   transition-colors
   border-b border-gray-300 last:border-b-0
@@ -40,11 +39,12 @@ const buttonStyle = `
   aria-selected:cursor-default
   not-aria-selected:hover:text-blue-500
   not-aria-selected:hover:bg-gradient-to-t 
-  not-aria-selected:hover:from-gray-100 
+  not-aria-selected:hover:from-slate-100 
   not-aria-selected:hover:to-white
 `;
 ---
 
+<!-- script handler manages tab selection -->
 <script type="module">
   let activeTab = window.location.hash
     ? window.location.hash.substring(1)
