@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import LearnBannerList from "@components/LearnBannerList.astro";
 
-import { Download } from "lucide-astro";
+import { ExternalLink } from "lucide-astro";
 
 import fs from "fs";
 import path from "path";
@@ -78,7 +78,7 @@ const title = pageData.title;
       <hr class="border-t border-gray-300 mb-6" />
       <p>{pageData.description}</p>
 
-      <!-- Additional resources -->
+      <!-- Additional resources [ ICTP links etc.] -->
       {
         pageData.additional_resources &&
           pageData.additional_resources.map((res) => (
@@ -87,7 +87,7 @@ const title = pageData.title;
               target="_blank"
               class="flex items-center space-x-1 hover:underline"
             >
-              <Download class="w-4 h-4 mr-1 fill-current" />
+              <ExternalLink class="w-6 h-6 mr-1" />
 
               <span>{res.name}</span>
             </a>

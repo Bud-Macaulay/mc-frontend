@@ -92,15 +92,19 @@ const { entries, rootPath } = Astro.props;
 
                 {/* Additional resources */}
                 {entry.additional_resources &&
-                  entry.additional_resources.map((res) => (
+                  entry.additional_resources.map((res, i) => (
                     <a
-                      href={`${PUBLIC_FILES_BASE}${entry.id}/${res.url}`}
-                      download
+                      key={i}
+                      href={
+                        /^https?:\/\//i.test(res.url)
+                          ? res.url
+                          : `${PUBLIC_FILES_BASE}${entry.id}/${res.url}`
+                      }
                       target="_blank"
+                      download={!/^https?:\/\//i.test(res.url)}
                       class="flex items-center space-x-1 hover:underline"
                     >
-                      <Download class="w-4 h-4 mr-1 fill-current" />
-
+                      <Download class="w-4 h-4 mr-1 fill-current inline-block" />
                       <span>{res.name}</span>
                     </a>
                   ))}

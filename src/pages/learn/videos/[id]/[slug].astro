@@ -130,12 +130,16 @@ const title = video.title;
         video.additional_resources.map((res, i) => (
           <a
             key={i}
-            href={`${PUBLIC_FILES_BASE}${video.id}/${res.url}`}
-            download
+            href={
+              /^https?:\/\//i.test(res.url)
+                ? res.url
+                : `${PUBLIC_FILES_BASE}${video.id}/${res.url}`
+            }
             target="_blank"
+            download={!/^https?:\/\//i.test(res.url)}
             class="inline-flex items-center mr-4 hover:underline"
           >
-            <Download class="w-4 h-4 mr-1 fill-current" />
+            <Download className="w-4 h-4 mr-1 fill-current" />
             <span>{res.name}</span>
           </a>
         ))
