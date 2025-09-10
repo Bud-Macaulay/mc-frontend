@@ -78,13 +78,13 @@ const title = video.title;
       {
         video.speakers && video.speakers.length > 0 && (
           <div class="video-author mt-2 italic">
+            Speakers:
             {video.speakers.map((speaker, index) => (
               <>
-                Speakers:
                 <span>
                   {speaker.title ? speaker.title + " " : ""}
                   {speaker.first_name} {speaker.last_name}
-                  {index < video.speakers.length - 1 ? ", " : ""}
+                  {index < video.speakers.length - 1 ? "& " : ""}
                 </span>
                 {video.profile_url && (
                   <a

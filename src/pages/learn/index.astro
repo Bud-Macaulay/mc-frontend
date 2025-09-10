@@ -31,22 +31,22 @@ const learnButtons = [
 ];
 ---
 
-<!-- search script -->
-<script type="module">
-  const form = document.getElementById("searchForm");
-  const input = document.getElementById("searchInput");
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const query = input.value.trim();
-    if (query) {
-      window.location.href = `/learn/search?query=${encodeURIComponent(query)}`;
-    }
-  });
-</script>
-
 <!-- main content -->
 <Layout breadcrumbs={breadcrumbs} title="Learn">
+  <!-- search script -->
+  <script type="module">
+    const form = document.getElementById("searchForm");
+    const input = document.getElementById("searchInput");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const query = input.value.trim();
+      if (query) {
+        window.location.href = `learn/search?query=${encodeURIComponent(query)}`;
+      }
+    });
+  </script>
+
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">Associated educational platforms</h3>

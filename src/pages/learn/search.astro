@@ -11,8 +11,8 @@ import Layout from "@layouts/Layout.astro";
 <Layout
   title="Search Results"
   breadcrumbs={[
-    { name: "Home", href: "/" },
-    { name: "Learn", href: "/learn" },
+    { name: "Home", href: "" },
+    { name: "Learn", href: "learn" },
     { name: "Search", href: "#" },
   ]}
 >
@@ -69,7 +69,7 @@ import Layout from "@layouts/Layout.astro";
     }
   </div>
 
-  <script type="module">
+  <script type="module" is:inline>
     import { search, data } from "/src/components/search.js";
 
     window.addEventListener("DOMContentLoaded", () => {
@@ -87,9 +87,9 @@ import Layout from "@layouts/Layout.astro";
         // Determine href based on type
         let href = "#";
         if (entry.type === "video") {
-          href = `/learn/videos/${entry.id}/${entry.slug}`;
+          href = `learn/videos/${entry.id}/${entry.slug}`;
         } else {
-          href = `/learn/sections/${entry.id}/${entry.slug}`;
+          href = `learn/sections/${entry.id}/${entry.slug}`;
         }
 
         // Set link & thumbnail
