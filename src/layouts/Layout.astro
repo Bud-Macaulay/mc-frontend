@@ -122,7 +122,7 @@ const moreLinkStyle =
           <div class="w-full h-full" set:html={LogoSvg} />
         </a>
 
-        <!-- Desktop nav -->
+        {/* Desktop nav */}
         <div class="hidden md:flex ml-4">
           {
             navLinks.map((link) => (
@@ -136,7 +136,7 @@ const moreLinkStyle =
           }
         </div>
 
-        <!-- Desktop more dropdown -->
+        {/* Desktop more dropdown */}
         <div class="relative ml-auto hidden md:block">
           <button
             id="mc-more-button"
@@ -159,7 +159,7 @@ const moreLinkStyle =
           </div>
         </div>
 
-        <!-- Mobile hamburger -->
+        {/* Mobile hamburger */}
         <div class="md:hidden ml-auto">
           <button
             id="mobile-menu-button"
@@ -182,7 +182,7 @@ const moreLinkStyle =
         </div>
       </nav>
 
-      <!-- Mobile dropdown menu -->
+      {/* Mobile dropdown menu */}
       <div
         id="mobile-menu"
         class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4 border-b border-gray-200"

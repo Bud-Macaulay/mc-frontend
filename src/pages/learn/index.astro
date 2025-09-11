@@ -31,9 +31,10 @@ const learnButtons = [
 ];
 ---
 
-<!-- main content -->
+{/*  main content* */}
 <Layout breadcrumbs={breadcrumbs} title="Learn">
-  <!-- search script -->
+  {
+    /*  search script content* 
   <script type="module">
     const form = document.getElementById("searchForm");
     const input = document.getElementById("searchInput");
@@ -45,7 +46,8 @@ const learnButtons = [
         window.location.href = `learn/search?query=${encodeURIComponent(query)}`;
       }
     });
-  </script>
+  </script> */
+  }
 
   <div class="space-y-10">
     <section class="space-y-4">
@@ -60,12 +62,13 @@ const learnButtons = [
       />
     </section>
 
-    <!-- heading and search button -->
+    {/*  heading and search button */}
     <section class="flex items-center justify-between mb-4">
       <h3 class="text-2xl">Materials Cloud legacy learn</h3>
 
-      <!-- TODO Figure out how to bundle search.js on deployment.-->
-      <!-- <form
+      {
+        /*  TODO Figure out how to bundle search.js on deployment. 
+      <form
         id="searchForm"
         class="flex border border-gray-300 rounded-lg overflow-hidden shadow-sm"
       >
@@ -76,7 +79,9 @@ const learnButtons = [
           class="flex-1 px-4 py-2"
         />
         <button type="submit" class="explore-button"> Search </button>
-      </form> -->
+      </form>
+      */
+      }
     </section>
 
     <hr class="border-t border-gray-300 mb-6" />
