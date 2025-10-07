@@ -10,6 +10,8 @@
  *   - description (optional): Text shown next to the description heading.
  * - rootPath: Base path for internal links
  */
+
+// TODO - switch <img/> to <Image/> .astro built in for optimisation?
 const { entries, rootPath } = Astro.props;
 ---
 
@@ -29,6 +31,8 @@ const { entries, rootPath } = Astro.props;
               src={`images/logos/${entry.logo}`}
               alt={entry.title}
               class="entry-image"
+              loading="lazy"
+              decoding="async"
             />
           </a>
         </div>

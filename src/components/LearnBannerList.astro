@@ -27,6 +27,8 @@ const { entries, rootPath } = Astro.props;
                   alt={entry.title}
                   class="entry-image max-w-48 max-h-48 w-auto h-auto object-cover"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {/* on thumbnail error we render an astro play */}
                 <div class="hidden items-center justify-center w-48 h-48 bg-gray-100 rounded">
