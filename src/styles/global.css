@@ -3,7 +3,7 @@
 @layer components {
   /* 
   we use .entry/.entries format banner-styled lists (tools/discover/learn)
-  While LearnBanner and SquareButtonList uses a slightly different component they both inherit color from 
+  While LearnBanner and SquareButton uses a slightly different component they both inherit color from 
   these classes.
   */
 

@@ -1,5 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import SquareButton from "@components/SquareButton.astro";
 
 const breadcrumbs = [
   { name: "Home", href: "." },
@@ -14,12 +15,28 @@ import yaml from "js-yaml";
 const file = fs.readFileSync("./src/data/explore.yml", "utf8");
 const data = yaml.load(file);
 const profiles = data.profiles;
+
+const optimade = {
+  href: "https://optimade.materialscloud.org/",
+  img: "images/logos/optimade.png",
+  title: "OPTIMADE APIs",
+  subtitle: "Explore Materials Cloud databases via the standard OPTIMADE APIs.",
+};
 ---
 
 <Layout breadcrumbs={breadcrumbs} title="Explore">
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">Explore</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <div class="flex mx-auto max-w-64 justify-center my-10">
+        <SquareButton {...optimade} />
+      </div>
+
+      <h3 class="text-xl pt-2">
+        Explore the AiiDA provenance of Materials Cloud databases
+      </h3>
       <hr class="border-t border-gray-300 mb-6" />
 
       <p>

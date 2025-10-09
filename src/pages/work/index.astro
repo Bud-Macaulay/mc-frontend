@@ -1,12 +1,12 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import SquareButtonList from "@components/SquareButtonList.astro";
+import SquareButton from "@components/SquareButton.astro";
 import BannerList from "@components/BannerList.astro";
 
 import fs from "fs";
 import yaml from "js-yaml";
 
-const wfile = fs.readFileSync("./src/data/work2.yml", "utf8");
+const wfile = fs.readFileSync("./src/data/work.yml", "utf8");
 const tfile = fs.readFileSync("./src/data/tools.yml", "utf8");
 const work = yaml.load(wfile);
 const tools = yaml.load(tfile);
@@ -25,12 +25,20 @@ const breadcrumbs = [
 
       <h3 class="text-xl">Run</h3>
 
-      <SquareButtonList
-        buttons={work.work}
-        containerMargin={"mx-50"}
-        numCols={2}
-        aspectRatio="1/1"
-      />
+      <div
+        class="grid w-3/5 mx-auto gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center"
+      >
+        {
+          work.work.map((btn) => (
+            <SquareButton
+              href={btn.href}
+              img={btn.img}
+              title={btn.title}
+              subtitle={btn.subtitle}
+            />
+          ))
+        }
+      </div>
     </section>
     <section class="space-y-4">
       <h3 class="text-xl">Tools</h3>

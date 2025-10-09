@@ -2,7 +2,7 @@
 // some discover sections do not have the iframe resizer script...
 // additionally some content is outside of the iframe...
 // for now ive added a new flag in the yaml called accordions?
-// this may be a little silly.
+// a unified understanding of what iframed content looks like would be nice;
 
 import Layout from "@layouts/Layout.astro";
 
@@ -52,9 +52,16 @@ const breadcrumbs = [
   { name: page.title, href: `discover/${iframe}` },
 ];
 
-const accordionContainerStyle = "bg-gray-50 rounded p-4 shadow-sm";
-const accordionTitleStyle = "cursor-pointer font-semibold";
-const accordionContentStyle = "mt-2 ml-2";
+const accordionContainerStyle =
+  "group w-full max-w-3xl mx-auto  mb-1 border border-gray-300 rounded shadow-md overflow-hidden";
+
+const accordionTitleStyle =
+  "flex items-center justify-between px-2 py-1 cursor-pointer bg-[#007fff] text-white " +
+  "hover:bg-[#449fff] group-open:bg-gray-200 group-open:text-black";
+
+const accordionContentStyle =
+  "px-3 py-0 bg-slate-50 text-gray-700 max-h-0 opacity-0 overflow-hidden " +
+  "transition-all duration-500 ease-in-out group-open:max-h-[1000px] group-open:opacity-100 group-open:py-2";
 ---
 
 <Layout
@@ -77,54 +84,51 @@ const accordionContentStyle = "mt-2 ml-2";
           ))
       }
     </div>
-    <hr class="border-t border-gray-300 mb-6" />
+    <hr class="border-t border-gray-300 mb-4" />
+
+    <div class="">
+      {page.description}
+    </div>
 
     {
-      page.accordions &&
-        page.accordions.map((accordion, index) => (
-          <details class={accordionContainerStyle} key={index}>
-            <summary class={accordionTitleStyle}>{accordion.title}</summary>
-            <div class={accordionContentStyle} set:html={accordion.content} />
-          </details>
-        ))
+      page.accordions?.map((accordion, index) => (
+        <details class={accordionContainerStyle} key={index}>
+          <summary class={accordionTitleStyle}>
+            {accordion.title}
+            <span class="transition-transform duration-300 group-open:rotate-90">
+              ▶
+            </span>
+          </summary>
+          <div class={accordionContentStyle} set:html={accordion.content} />
+        </details>
+      ))
     }
-    <!-- TODO: remove hard coded journal reference here by using the map above -->
-    <details class={accordionContainerStyle}>
-      <summary class={accordionTitleStyle}>How to cite</summary>
-      <div class={accordionContentStyle}>
-        <p>
-          Please find the appropriate journal reference in
-          <a href=`https://doi.org/${page.doi}` target="_blank"
-            >10.24435/materialscloud:2020.0029/v1.
-          </a>
-        </p>
-      </div>
-    </details>
+    <div class="pt-12">
+      <iframe
+        id="contentiframe"
+        class="w-full"
+        src={page.iframe_src}
+        height={page.iframe_height}
+        allowfullscreen></iframe>
+    </div>
 
-    <iframe
-      id="contentiframe"
-      class="w-full"
-      src={page.iframe_src}
-      height="1500"
-      allowfullscreen></iframe>
+    <script
+      src="https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.min.js"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        iframeResize(
+          {
+            license: "GPLv3",
+            checkOrigin: false,
+            log: true,
+            heightCalculationMethod: "taggedElement",
+            inPageLinks: true,
+            minHeight: "100px",
+          },
+          "#contentiframe"
+        );
+      });
+    </script>
   </section>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.min.js"
-  ></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      iframeResize(
-        {
-          license: "GPLv3",
-          checkOrigin: false,
-          log: true,
-          heightCalculationMethod: "taggedElement",
-          inPageLinks: true,
-          minHeight: "100px",
-        },
-        "#contentiframe"
-      );
-    });
-  </script>
 </Layout>

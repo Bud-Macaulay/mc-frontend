@@ -1,5 +1,4 @@
 ---
-# TODO add cite accordions to iframed content here.
 menu:
   main_discover:
     - link: https://mc3d.materialscloud.org
@@ -83,9 +82,15 @@ menu:
             that dimer alongside its SMILES string, which allows for rapid transferability 
             of the structure to other chemistry software. </p><p class="mt-2">Further information on methods,
             results and the full dataset are given in the references shown below.
+        - title: "How to cite"
+          content: |
+            <p>Please find the preprint reference at 
+              <a href="https://doi.org/10.26434/chemrxiv.13333475.v1">10.26434/chemrxiv.13333475.v1</a>
+            and the database reference at <a href="https://doi.org/10.24435/materialscloud:xj-9d">10.24435/materialscloud:xj-9d</a>.
+            </p>
 
     - link: pyrene-mofs
-      title: "Donor-acceptor copolymers for intramolecular singlet fission"
+      title: "Pyrene-based metal organic frameworks"
       authors: F. Pelin Kinik, Andres Ortega-Guerrero, Daniele Ongari, Christopher P. Ireland, Berend Smit
       description: |
         Atomic structures of experimentally synthesized pyrene-based metal-organic frameworks.
@@ -110,8 +115,14 @@ menu:
             their properties in a scatter plot. For the structures that are charges or 
             failed the DFT optimization the properties and the unit cell of the original 
             (manually cleaned) structure are shown.</p>
+        - title: "How to cite"
+          content: |
+            <p>Please find the appropriate journal reference in 
+              <a href="https://doi.org/10.24435/materialscloud:z5-ct">10.24435/materialscloud:z5-ct</a>.
+            </p>
 
-    - link: kpcovr
+    # legacy discover
+    - link: https://legacy.materialscloud.org/discover/kpcovr/arginine
       title: "Kernel principle covariates regression"
       authors: Benjamin A. Helfrecht, Rose K. Cersonsky, Guillaume Fraux, Michele Ceriotti
       description: |
@@ -120,7 +131,8 @@ menu:
       doi:
         - 10.24435/materialscloud:ay-eq
 
-    - link: autowannier
+    # legacy discover
+    - link: https://legacy.materialscloud.org/discover/autowannier
       title: "Automated high-throughput wannierisation"
       authors: |
         Valerio Vitale, Giovanni Pizzi, Antimo Marrazzo, Snehal Kumbhar, Elsa Passaro,
@@ -143,7 +155,9 @@ menu:
         - 10.24435/materialscloud:2020.0029/v1
       iframe: true
       iframe_src: "https://hcofs-co2.materialscloud.io"
-      iframe_maxWidth: "max-w-[1850px]"
+      iframe_maxWidth: "max-w-[1050px]"
+      iframe_height: 700
+
       accordions:
         - title: "About"
           content: |
@@ -155,6 +169,11 @@ menu:
             monoethanolamine; over 70 are better performers than the best experimental COFs;
             and several perform similarly to Mg-MOF-74. We analyze the effect of pore topology
             on carbon capture performance in order to guide development of improved carbon capture materials.
+        - title: "How to cite"
+          content: |
+            <p>Please find the appropriate journal reference in 
+              <a href="https://doi.org/10.24435/materialscloud:2020.0029/v1">10.24435/materialscloud:2020.0029/v1</a>.
+            </p>
 
     - link: mofs
       title: "Metal-organic frameworks for carbon capture"
@@ -171,7 +190,9 @@ menu:
         - 10.24435/materialscloud:2018.0016/v3
       iframe: true
       iframe_src: "https://mofs.materialscloud.io/select-figure"
-      iframe_maxWidth: "max-w-[1850px]"
+      iframe_maxWidth: "max-w-[1050px]"
+      iframe_height: 700
+
       accordions:
         - title: About
           content: |
@@ -191,14 +212,17 @@ menu:
              the REPEAT method, and more detailed simulations to obtain common chemical patterns surrounding CO2 binding sites (adsorbaphores). </p>
             <p class="mt-2">The interactive figure allows to explore the full database of assembled structures,
             together with their properties. All structures and properties can be downloaded in bulk from the Materials Cloud archive entry linked above.</p>
+        - title: How to cite
+          content: |
+            <p>Please find the appropriate journal reference in <a href="https://doi.org/10.24435/materialscloud:2018.0016/v3">10.24435/materialscloud:2018.0016/v3</a>.  </p>
 
-    - link: 2dtopo
+    - link: https://legacy.materialscloud.org/discover/2dtopo
       title: "2D topological insulators"
       authors: |
         Antimo Marrazzo, Marco Gibertini, Davide Campi, Nicolas Mounet, Snehal Kumbhar, Nicola Marzari
       description: |
         Results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators).
-      logo: hcofs-co2.png
+      logo: 2dtopo.png
       doi:
         - 10.24435/materialscloud:2019.0081/v1
 
@@ -214,6 +238,7 @@ menu:
       iframe: true
       iframe_src: "https://tc-applicability.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
+      iframe_height: 800
       accordions:
         - title: About
           content: |
@@ -232,9 +257,14 @@ menu:
             (COFs), and Metal Organic Frameworks (MOFs)), tail-corrections
             are an appropriate choice with which the results are much less
             sensitive to the details of the truncation.
+        - title: How to cite
+          content: |
+            <p>Please find the appropriate journal reference in 
+              <a href="https://archive.materialscloud.org/2019.0024/v3">https://archive.materialscloud.org/2019.0024/v3</a>. 
+            </p>
 
     - link: curated-cofs
-      title: "CURATED covalent oragnic frameworks database"
+      title: "CURATED covalent organic frameworks database"
       authors: |
         Daniele Ongari, Aliaksandr V. Yakutovich, Leopold Talirz, Berend Smit
       description: |
@@ -246,7 +276,9 @@ menu:
         - 10.24435/materialscloud:z6-jn
       iframe: true
       iframe_src: "https://curated-cofs.materialscloud.io/select-figure"
-      iframe_maxWidth: "max-w-[1150px]"
+      iframe_maxWidth: "max-w-[1250px]"
+      iframe_height: 30200
+
       accordions:
         - title: About
           content: |
@@ -312,6 +344,9 @@ menu:
               <li>Include COFs reported until July 1st 2022 (871 COFs in total).</li>
               <li>226 new COFs, 30 discarded (mostly duplicates).</li>
             </ul>
+        - title: How to cite
+          content: |
+            <p>Please find the appropriate journal reference in <a href="https://doi.org/10.24435/materialscloud:cz-kq">10.24435/materialscloud:cz-kq</a>.  </p>
 
     - link: ccg
       title: "C-C cross-coupling genome"
@@ -325,6 +360,8 @@ menu:
       iframe: true
       iframe_src: "https://ccg.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
+      iframe_height: 700
+
       accordions:
         - title: About
           content: |
@@ -339,6 +376,11 @@ menu:
             ideal for any of the coupling reactions studied. </p>
             <p class="mt-2"> The chemical structures of the 91 ligands are available in the 
             <a target="_blank" href="https://doi.org/10.24435/materialscloud:2019.0007/v3">archive record</a>. </p>
+        - title: How to cite
+          content: |
+            <p>Please find the appropriate journal reference in 
+              <a href="https://doi.org/10.24435/materialscloud:2019.0007/v3">10.24435/materialscloud:2019.0007/v3</a>.
+            </p>
 
     - link: cofs
       title: "Covalent organic frameworks for methane storage applications"
@@ -352,6 +394,8 @@ menu:
       iframe: true
       iframe_src: "https://cofs.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
+      iframe_height: 1100
+
       accordions:
         - title: About
           content: |
@@ -365,6 +409,11 @@ menu:
             database of assembled COF structures, together with their properties.
             All structures and properties can be downloaded in bulk from the
             Materials Cloud archive entry linked above. </p>
+        - title: How to cite
+          content: |
+            <p>Please find the appropriate journal reference in 
+              <a href="https://doi.org/10.24435/materialscloud:cz-kq">10.24435/materialscloud:cz-kq</a>.
+            </p>
 
     - link: topomat
       title: "TopoMat: a database of high-throughput first-principles calculations of topological materials"
@@ -373,10 +422,7 @@ menu:
       description: |
         The database contains the results of high-throughput first-principles screening
         of known crystal structures for topological materials (topological insulators,
-        Dirac and Weyl semimetals, etc.). If you use this work please cite
-        the following publication in progress: G. Autès, Q. S. Wu, N. Mounet, O. V. Yazyev,
-        “TopoMat: a database of high-throughput first-principles
-        calculations of topological materials”, in preparation (2018).
+        Dirac and Weyl semimetals, etc.)
       logo: topomat.png
       doi:
         - 10.24435/materialscloud:2019.0019/v1
@@ -422,3 +468,9 @@ menu:
             4, 72 (2018). <a href="http://www.materialscloud.org/sssp/" target="_blank">http://www.materialscloud.org/sssp/</a>.
             <br> [5] D. Gresch et al.&nbsp;Z2Pack: Numerical implementation of hybrid Wannier centers for identifying
             topological materials.&nbsp; Phys. Rev. B 95, 075146, 2017. </p>
+        - title: How to cite
+          content: |
+            <p>If you use this work please cite the following publication in progress:</p>
+             <p class="px-4 py-2"> G. Autès, Q. S. Wu, N. Mounet &amp; O. V. Yazyev, 
+             “TopoMat: a database of high-throughput first-principles calculations of topological materials”, in preparation (2018).
+             </p>

@@ -1,30 +1,10 @@
 work:
-  - href: "work/tools"
-    img: "images/work_tools.png"
-    title: "Tools"
-    subtitle: "Computational tools to work with your data online"
-
   - href: "https://www.aiidalab.net"
     img: "images/aiidalab_gears.png"
     title: "AiiDAlab"
     subtitle: "Run your own simulations using AiiDA on the cloud"
 
-  - href: "https://aiidateam.github.io/aiida-registry/"
-    img: "images/aiida-logo-128.png"
-    title: "AiiDA registry"
-    subtitle: "The official registry of AiiDA plugins"
-
   - href: "https://quantum-mobile.readthedocs.io"
     img: "images/quantum_mobile.png"
     title: "Quantum Mobile"
     subtitle: "Quantum simulation codes + AiiDA in a virtual machine"
-
-  - href: "https://www.osscar.org/"
-    img: "images/osscar-logo.svg"
-    title: "OSSCAR"
-    subtitle: "Open Software Services for Classrooms and Research"
-
-  - href: "optimade"
-    img: "images/logos/optimade.png"
-    title: "OPTIMADE APIs"
-    subtitle: "Access Materials Cloud databases via the standard OPTIMADE APIs."

@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import LearnBannerList from "@components/LearnBannerList.astro";
-import SquareButtonList from "@components/SquareButtonList.astro";
+import SquareButton from "@components/SquareButton.astro";
 
 import fs from "fs";
 import yaml from "js-yaml";
@@ -31,57 +31,31 @@ const learnButtons = [
 ];
 ---
 
-{/*  main content* */}
 <Layout breadcrumbs={breadcrumbs} title="Learn">
-  {
-    /*  search script content* 
-  <script type="module">
-    const form = document.getElementById("searchForm");
-    const input = document.getElementById("searchInput");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const query = input.value.trim();
-      if (query) {
-        window.location.href = `learn/search?query=${encodeURIComponent(query)}`;
-      }
-    });
-  </script> */
-  }
-
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">Associated educational platforms</h3>
       <hr class="border-t border-gray-300 mb-6" />
 
-      <SquareButtonList
-        buttons={learnButtons}
-        containerMargin={"mx-50"}
-        numCols={2}
-        aspectRatio="1/1"
-      />
+      <div
+        class="grid w-3/5 mx-auto gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center"
+      >
+        {
+          learnButtons.map((btn) => (
+            <SquareButton
+              href={btn.href}
+              img={btn.img}
+              title={btn.title}
+              subtitle={btn.subtitle}
+            />
+          ))
+        }
+      </div>
     </section>
 
-    {/*  heading and search button */}
-    <section class="flex items-center justify-between mb-4">
+    {/*  heading */}
+    <section class="flex mb-4">
       <h3 class="text-2xl">Materials Cloud legacy learn</h3>
-
-      {
-        /*  TODO Figure out how to bundle search.js on deployment. 
-      <form
-        id="searchForm"
-        class="flex border border-gray-300 rounded-lg overflow-hidden shadow-sm"
-      >
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search..."
-          class="flex-1 px-4 py-2"
-        />
-        <button type="submit" class="explore-button"> Search </button>
-      </form>
-      */
-      }
     </section>
 
     <hr class="border-t border-gray-300 mb-6" />
