@@ -6,10 +6,7 @@ import SquareButton from "@components/SquareButton.astro";
 import fs from "fs";
 import yaml from "js-yaml";
 
-const breadcrumbs = [
-  { name: "Home", href: "." },
-  { name: "Learn", href: "learn" },
-];
+const breadcrumbs = [{ name: "Learn", href: "learn" }];
 
 const file = fs.readFileSync("./src/data/learn-topsections.yml", "utf8");
 const data = yaml.load(file);

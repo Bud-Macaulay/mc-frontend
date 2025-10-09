@@ -38,10 +38,7 @@ if (!pageData) throw new Error(`No page found for id ${id}`);
 // Find children
 const children = manifest.filter((item) => item.parentId === id);
 
-const breadcrumbs = [
-  { name: "Home", href: "." },
-  { name: "Learn", href: "learn" },
-];
+const breadcrumbs = [{ name: "Learn", href: "learn" }];
 
 let current = pageData;
 const parentTrail = [];

@@ -47,7 +47,6 @@ const { iframe } = Astro.params;
 const page = iframediscover.find((discover) => discover.slug === iframe);
 
 const breadcrumbs = [
-  { name: "Home", href: "." },
   { name: "Discover", href: "discover" },
   { name: page.title, href: `discover/${iframe}` },
 ];

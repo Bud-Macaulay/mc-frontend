@@ -100,6 +100,8 @@ menu:
       iframe: true
       iframe_src: "https://pyrene-mofs.materialscloud.io/select_pyrenemofs"
       iframe_maxWidth: "max-w-[1850px]"
+      iframe_height: 4415
+
       accordions:
         - title: "About"
           content: |

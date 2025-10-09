@@ -11,41 +11,46 @@
   :root {
     --entry-bg: theme("colors.slate.50");
     --entry-hover-bg: theme("colors.slate.100");
+    --entry-border: theme("colors.slate.200");
+    --entry-text: theme("colors.gray.900");
+    --entry-link: rgb(21, 101, 192);
   }
 
   .entries-container {
     @apply space-y-4 p-2;
   }
+
   .entry-container {
+    @apply flex gap-4 p-4 rounded-sm border shadow-sm transition-shadow duration-200;
     background-color: var(--entry-bg);
-    @apply flex gap-4 p-4 rounded-xs shadow-sm hover:shadow-lg transition-shadow duration-200;
+    border-color: var(--entry-border);
   }
 
   .entry-container:hover {
+    @apply shadow-lg;
     background-color: var(--entry-hover-bg);
   }
-
   .entry-flex-shrink {
     @apply flex-shrink-0;
   }
-  .entry-image {
-    @apply w-24 h-24 object-contain rounded-md;
-  }
-  .entry-title {
-    @apply text-base text-[rgb(21,101,192)] hover:no-underline;
-  }
+
   .entry-info-container {
     @apply flex flex-col flex-1 ml-4;
   }
 
-  .entry-author {
-    @apply py-2 text-base text-gray-900;
+  .entry-image {
+    @apply w-24 h-24 object-contain rounded-md;
   }
+
+  .entry-title {
+    @apply text-base font-medium hover:no-underline;
+    color: var(--entry-link);
+  }
+
+  .entry-author,
   .entry-description {
-    @apply text-base text-gray-900;
-  }
-  .greyed-entry-container {
-    @apply flex;
+    @apply text-base;
+    color: var(--entry-text);
   }
 }
 

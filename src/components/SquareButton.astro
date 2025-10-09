@@ -7,10 +7,8 @@
  *  - img: image path
  *  - title: text below the image
  *  - subtitle: optional smaller text
- *  - bgColor: optional background + hover color classes
  *  - width: Tailwind width class (e.g. "w-32")
  *  - height: Tailwind height class (e.g. "h-32")
- *  - shadow: optional hover shadow
  */
 
 const {
@@ -18,27 +16,23 @@ const {
   img,
   title,
   subtitle = null,
-  bgColor = "bg-[var(--entry-bg)] hover:bg-[var(--entry-hover-bg)]",
   width = "w-32",
   height = "h-32",
-  shadow = "shadow hover:shadow-lg",
 } = Astro.props;
 
 const buttonStyle = `
-  group block flex flex-col items-center justify-center text-center
-  ${bgColor} border-2 border-slate-300 rounded-md
-  ${shadow} transition hover:no-underline
+  block flex flex-col items-center justify-center text-center no-underline
 `;
-
-const imgStyle = `${width} ${height} object-contain`;
 ---
 
-<a
-  href={href}
-  target={href.startsWith("http") ? "_blank" : undefined}
-  class={buttonStyle}
->
-  <img src={img} alt={title} class={imgStyle} />
-  <h3 class="mt-2">{title}</h3>
-  {subtitle && <p class="p-2">{subtitle}</p>}
-</a>
+<div class="entry-container">
+  <a
+    href={href}
+    target={href.startsWith("http") ? "_blank" : undefined}
+    class={buttonStyle}
+  >
+    <img class=`entry-image ${width} ${height}` src={img} alt={title} />
+    <h3 class="entry-title">{title}</h3>
+    {subtitle && <p class="entry-description">{subtitle}</p>}
+  </a>
+</div>

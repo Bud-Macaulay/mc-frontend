@@ -30,10 +30,7 @@ const { id } = Astro.params;
 const video = manifest.find((item) => item.id === id);
 if (!video) throw new Error(`Video not found: ${id}`);
 
-const breadcrumbs = [
-  { name: "Home", href: "." },
-  { name: "Learn", href: "learn" },
-];
+const breadcrumbs = [{ name: "Learn", href: "learn" }];
 
 let current = video;
 const parentTrail = [];

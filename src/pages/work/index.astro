@@ -11,10 +11,7 @@ const tfile = fs.readFileSync("./src/data/tools.yml", "utf8");
 const work = yaml.load(wfile);
 const tools = yaml.load(tfile);
 
-const breadcrumbs = [
-  { name: "Home", href: "." },
-  { name: "Work", href: "work" },
-];
+const breadcrumbs = [{ name: "Work", href: "work" }];
 ---
 
 <Layout breadcrumbs={breadcrumbs} title="Work">
