@@ -126,31 +126,50 @@ const imageStyle = "w-full max-h-72 object-contain";
       </h6>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 px-2">
-      <img
-        class={imageStyle}
-        title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
-        src="images/plausible/plausible-rollup_materialscloud_org_n_visits_months.png"
-        alt="Monthly visits"
-      />
-      <img
-        class={imageStyle}
-        title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
-        src="images/plausible/plausible-rollup_materialscloud_org_piechart_n_visits_country.png"
-        alt="Visits by country"
-      />
-      <img
-        class={imageStyle}
-        title="Statistics of traffic to the archive.materialscloud.org site."
-        src="images/plausible/archive_materialscloud_org_n_visits_months.png"
-        alt="Archive monthly visits"
-      />
-      <img
-        class={imageStyle}
-        title="Statistics of traffic to the archive.materialscloud.org site."
-        src="images/plausible/archive_materialscloud_org_piechart_n_visits_country.png"
-        alt="Archive visits by country"
-      />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 px-2 gap-x-4">
+      <div class="flex flex-col items-center">
+        <span class="mb-4 text-center text-lg text-gray-700">
+          Materials Cloud all
+        </span>
+        <img
+          class={imageStyle}
+          src="images/plausible/mc_all_barchart_10_10_2025.png"
+          alt="Monthly visits"
+        />
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="mb-4 text-center text-lg text-gray-700">
+          Materials Cloud all
+        </span>
+        <img
+          class={imageStyle}
+          src="images/plausible/mc_all_pie_10_10_2025.png"
+          alt="Visits by country"
+        />
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="mb-4 text-center text-lg text-gray-700">
+          Materials Cloud archive
+        </span>
+        <img
+          class={imageStyle}
+          src="images/plausible/mc_archive_barchart_10_10_2025.png"
+          alt="Archive monthly visits"
+        />
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="mb-4 text-center text-lg text-gray-700">
+          Materials Cloud archive
+        </span>
+        <img
+          class={imageStyle}
+          src="images/plausible/mc_archive_pie_10_10_2025.png"
+          alt="Archive visits by country"
+        />
+      </div>
     </div>
   </div>
 </div>
