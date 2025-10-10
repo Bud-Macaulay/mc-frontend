@@ -1,7 +1,7 @@
 ---
 import { ENV } from "../../../config/env";
 
-// Fetch statistics
+// Fetch statistics on build.
 let archiveStats;
 try {
   const res = await fetch(
@@ -16,34 +16,39 @@ try {
 
 let exploreStats;
 try {
-  const res2 = await fetch(
+  const res = await fetch(
     `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/explore`
   );
-  if (!res2.ok) throw new Error(`Explore API error: ${res2.status}`);
-  exploreStats = await res2.json();
+  if (!res.ok) throw new Error(`Explore API error: ${res.status}`);
+  exploreStats = await res.json();
 } catch (err) {
   console.error("Failed to fetch explore statistics, using fallback:", err);
   exploreStats = {};
 }
-// Safely use statistics
-const structureNumber =
-  archiveStats?.data?.n_structures?.toLocaleString("de-CH") ?? "N/A";
-const dftStructureNumber =
-  archiveStats?.data?.dft_structures?.toLocaleString("de-CH") ?? "N/A";
 
-const totalNodes = exploreStats?.data?.nodes?.toLocaleString("de-CH") ?? "N/A";
-const totalProcesses =
-  exploreStats?.data?.total_processes?.toLocaleString("de-CH") ?? "N/A";
+// Helper for safely formatting numbers
+const formatNumber = (n: number | undefined | null) =>
+  n?.toLocaleString("de-CH") ?? "N/A";
 
-const dateObj = archiveStats?.data?.time_interval
-  ? new Date(archiveStats.data.time_interval[1])
-  : new Date();
-const archiveDate =
-  dateObj.toLocaleString("default", { month: "short" }) +
-  " " +
-  dateObj.getUTCDate() +
-  ", " +
-  dateObj.getFullYear();
+// Helper for formatting a date string
+const formatDate = (dateStr?: string) => {
+  const date = dateStr ? new Date(dateStr) : new Date();
+  return (
+    date.toLocaleString("default", { month: "short" }) +
+    " " +
+    date.getUTCDate() +
+    ", " +
+    date.getFullYear()
+  );
+};
+
+const structureNumber = formatNumber(archiveStats?.data?.n_structures);
+const dftStructureNumber = formatNumber(archiveStats?.data?.dft_structures);
+
+const totalNodes = formatNumber(exploreStats?.data?.nodes);
+const totalProcesses = formatNumber(exploreStats?.data?.total_processes);
+
+const archiveDate = formatDate(archiveStats?.data?.time_interval?.[1]);
 
 const imageStyle = "w-full max-h-72 object-contain";
 ---

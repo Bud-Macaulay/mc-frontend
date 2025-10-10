@@ -2,9 +2,9 @@
 
 @layer components {
   /* 
-  we use .entry/.entries format banner-styled lists (tools/discover/learn)
-  While LearnBanner and SquareButton uses a slightly different component they both inherit color from 
-  these classes.
+  we use .entry/.entries format banner-styled lists (tools/discover/learn) 
+  While LearnBannerList, BannerList and SquareButton uses a slightly different component they both inherit styles from 
+  these tw classes.
   */
 
   /* common color */

@@ -3,9 +3,14 @@ import Layout from "@layouts/Layout.astro";
 
 const buttonStyle =
   "px-2 py-1 bg-blue-800 text-white text-xs rounded hover:bg-blue-900";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Data Management Plan", href: null },
+];
 ---
 
-<Layout>
+<Layout breadcrumbs={breadcrumbs}>
   <div class="space-y-10">
     <section class="space-y-4">
       <h2 class="text-3xl">Data Management Plan</h2>

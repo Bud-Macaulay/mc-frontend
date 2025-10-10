@@ -47,7 +47,7 @@ const LogoSvg = `
 `;
 
 // slot div styling.
-const contentWrapperStyle = `mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm min-w-[350px] w-full ${maxWidth}`;
+const contentWrapperStyle = `mc-page-content py-5 px-7 mb-4 bg-white rounded-sm shadow-md min-w-[350px] w-full ${maxWidth} `;
 
 // header styling
 const htmlStyle = "m-0 w-full h-full bg-[#f0f6f9]";
@@ -250,7 +250,7 @@ const moreLinkStyle =
       )
     }
 
-    <div style="display: flex; justify-content: center;">
+    <div class="flex justify-center">
       <div class={contentWrapperStyle}>
         <slot />
       </div>

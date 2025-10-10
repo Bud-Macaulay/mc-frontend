@@ -4,14 +4,14 @@
 import Layout from "@layouts/Layout.astro";
 import BannerList from "@components/BannerList.astro";
 
-const breadcrumbs = [{ name: "Discover", href: "discover" }];
-
 import fs from "fs";
 import yaml from "js-yaml";
 
 const file = fs.readFileSync("./src/data/discover.yml", "utf8");
 const data = yaml.load(file);
 const menu = data.menu;
+
+const breadcrumbs = [{ name: "Discover", href: "discover" }];
 ---
 
 <Layout breadcrumbs={breadcrumbs} title="Discover">

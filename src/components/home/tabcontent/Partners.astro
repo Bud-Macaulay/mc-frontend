@@ -6,10 +6,10 @@ import yaml from "js-yaml";
 const file = fs.readFileSync("./src/data/partners.yml", "utf8");
 const data = yaml.load(file);
 
-const supporters = data.supporters || ["test"];
-const supercomps = data.supercomps || ["test"];
-const reccers = data.recommendors || ["test"];
-const indexers = data.indexed || ["test"];
+const supporters = data.supporters;
+const supercomps = data.supercomps;
+const reccers = data.recommendors;
+const indexers = data.indexed;
 
 const partnerCardStyle = "flex items-center space-x-4 px-6 py-2 bg-white";
 const gridStyle = "grid grid-cols-1 md:grid-cols-2 gap-4";
@@ -27,6 +27,8 @@ const logoStyle = "flex-shrink-0 w-24 h-24";
               src={`images/endorsers/${entry.logo}`}
               alt={`${entry.name} logo`}
               class="w-full h-full object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="flex flex-col">
