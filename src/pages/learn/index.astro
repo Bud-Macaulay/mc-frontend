@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import LearnBannerList from "@components/LearnBannerList.astro";
-import SquareButton from "@components/SquareButton.astro";
+import RectangleButton from "@components/RectangleButton.astro";
 
 import fs from "fs";
 import yaml from "js-yaml";
@@ -11,7 +11,6 @@ const breadcrumbs = [{ name: "Learn", href: "learn" }];
 const file = fs.readFileSync("./src/data/learn-topsections.yml", "utf8");
 const data = yaml.load(file);
 
-// learn external buttons
 const learnButtons = [
   {
     href: "https://www.lhumos.org/",
@@ -39,12 +38,7 @@ const learnButtons = [
       >
         {
           learnButtons.map((btn) => (
-            <SquareButton
-              href={btn.href}
-              img={btn.img}
-              title={btn.title}
-              subtitle={btn.subtitle}
-            />
+            <RectangleButton {...btn} />
           ))
         }
       </div>

@@ -3,7 +3,7 @@
 @layer components {
   /* 
   we use .entry/.entries format banner-styled lists (tools/discover/learn) 
-  While LearnBannerList, BannerList and SquareButton uses a slightly different component they both inherit styles from 
+  While LearnBannerList, BannerList and RectangleButton uses a slightly different component they both inherit styles from 
   these tw classes.
   */
 

@@ -16,8 +16,8 @@ const {
   img,
   title,
   subtitle = null,
-  width = "w-32",
-  height = "h-32",
+  width = "w-64",
+  height = "h-40",
 } = Astro.props;
 
 const buttonStyle = `
@@ -25,13 +25,13 @@ const buttonStyle = `
 `;
 ---
 
-<div class="entry-container">
+<div class=`entry-container ${width} ${height}`>
   <a
     href={href}
     target={href.startsWith("http") ? "_blank" : undefined}
     class={buttonStyle}
   >
-    <img class=`entry-image ${width} ${height}` src={img} alt={title} />
+    <img class=`entry-image h-14` src={img} alt={title} />
     <h3 class="entry-title">{title}</h3>
     {subtitle && <p class="entry-description">{subtitle}</p>}
   </a>

@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import SquareButton from "@components/SquareButton.astro";
+import RectangleButton from "@components/RectangleButton.astro";
 
 const breadcrumbs = [{ name: "Explore", href: "explore" }];
 
@@ -17,7 +17,7 @@ const optimade = {
   href: "https://optimade.materialscloud.org/",
   img: "images/logos/optimade.png",
   title: "OPTIMADE APIs",
-  subtitle: "Explore Materials Cloud databases via the standard OPTIMADE APIs.",
+  subtitle: "Explore Materials Cloud data via the standard APIs.",
 };
 ---
 
@@ -27,8 +27,8 @@ const optimade = {
       <h3 class="text-2xl">Explore</h3>
       <hr class="border-t border-gray-300 mb-6" />
 
-      <div class="flex mx-auto max-w-64 justify-center my-10">
-        <SquareButton {...optimade} />
+      <div class="flex mx-auto max-w-64 justify-center">
+        <RectangleButton {...optimade} />
       </div>
 
       <h3 class="text-xl pt-2">

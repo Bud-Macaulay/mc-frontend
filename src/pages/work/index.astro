@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import SquareButton from "@components/SquareButton.astro";
+import RectangleButton from "@components/RectangleButton.astro";
 import BannerList from "@components/BannerList.astro";
 
 import fs from "fs";
@@ -27,7 +27,7 @@ const breadcrumbs = [{ name: "Work", href: "work" }];
       >
         {
           work.work.map((btn) => (
-            <SquareButton
+            <RectangleButton
               href={btn.href}
               img={btn.img}
               title={btn.title}
