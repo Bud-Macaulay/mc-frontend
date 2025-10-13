@@ -1,17 +1,15 @@
 ---
-import {
-  Info,
-  Globe,
-  Newspaper,
-  BarChart2,
-  Users,
-  FileText,
-} from "lucide-astro";
+import Info from '@lucide/astro/icons/info';
+import Globe from '@lucide/astro/icons/globe';
+import Newspaper from '@lucide/astro/icons/newspaper';
+import ChartNoAxesColumn from '@lucide/astro/icons/chart-no-axes-column';
+import Users from '@lucide/astro/icons/users';
+import FileText from '@lucide/astro/icons/file-text';
+
 
 import Vision from "./tabcontent/Vision.astro";
 import News from "./tabcontent/News.astro";
-
-import DMP from "./tabcontent/OSandDMPs.astro";
+import DMP from "./tabcontent/DMP.astro";
 import Statistics from "./tabcontent/Statistics.astro";
 import Partners from "./tabcontent/Partners.astro";
 
@@ -22,7 +20,7 @@ const tabs = [
   {
     id: "statistics",
     label: "Statistics",
-    Icon: BarChart2,
+    Icon: ChartNoAxesColumn,
     Content: Statistics,
   },
   { id: "partners", label: "Partners", Icon: Users, Content: Partners },

@@ -35,9 +35,6 @@ Development notes - tips for development:
 
     - Tailwind aims to have all styling inline via pre-existing classes. Some of our sections are inconsistant (I will try add a globalised styling to these.)
 
-  - bootstrap-icons &rarr; lucide astro `npm install lucide-astro`
-    - Should be lighter as these are SVGs optimised for the web
-
 # Astro quickstart
 
 Created with

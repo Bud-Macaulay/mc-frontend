@@ -1,7 +1,11 @@
 ---
 // Similar to BannerList but with some additional
 //  fields for speaker, file links etc.
-import { Play, Download, CirclePlay } from "lucide-astro";
+import Play from '@lucide/astro/icons/play';
+import Download from '@lucide/astro/icons/download';
+import CirclePlay from '@lucide/astro/icons/circle-play';
+
+
 const PUBLIC_FILES_BASE = import.meta.env.PUBLIC_FILES_BASE || "/";
 
 const { entries, rootPath } = Astro.props;
