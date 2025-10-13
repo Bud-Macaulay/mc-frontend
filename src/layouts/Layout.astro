@@ -1,10 +1,12 @@
 ---
 import "../styles/global.css";
 
-const { breadcrumbs = [] } = Astro.props;
-
-const { title = "DEV Materials Cloud" } = Astro.props;
-const { maxWidth = "max-w-[1000px]" } = Astro.props;
+const {
+  breadcrumbs = [],
+  title = "DEV Materials Cloud",
+  maxWidth = "max-w-[1000px]",
+  padding = "py-5 px-7 mb-4",
+} = Astro.props;
 
 const baseHref = (import.meta.env.BASE_URL || "/").replace(/\/?$/, "/"); // also add trailing slash if not present
 
@@ -29,17 +31,17 @@ const moreLinks = [
   { name: "Connect your REST API", href: "explore/connect" },
 ];
 
-// slot div styling.
-const contentWrapperStyle = `mc-page-content py-5 px-7 mb-4 bg-white rounded-sm shadow-md min-w-[350px] w-full ${maxWidth} `;
+// slot div styling
+const contentWrapperStyle = `bg-white rounded-sm shadow-md min-w-[350px] w-full ${padding} ${maxWidth} `;
 
 // header styling
 const htmlStyle = "m-0 w-full h-full bg-[#f0f6f9]";
-const iconStyle = "inline-block w-14 h-auto ml-2 mt-1 flex-shrink-0";
+const iconStyle = "inline-block w-14 h-auto ml-2 flex-shrink-0";
 
 const navLinkBaseStyle =
   "font-semibold text-gray-700 hover:text-gray-500 hover:no-underline";
 const navLinkSelectedStyle =
-  "text-red-700 bg-gray-100 pointer-events-none cursor-default";
+  "text-red-700 bg-gray-100";
 
 // NavLinks
 const desktopNavLinkStyle = `px-4 h-16 border-b border-gray-200 flex items-center ${navLinkBaseStyle}`;
@@ -199,7 +201,7 @@ const moreLinkStyle =
       breadcrumbs.length > 0 ? (
         <ul
           id="breadcrumbs"
-          class="flex items-center bg-gray-50 border border-gray-300 rounded px-5 py-1 shadow-sm font-light m-6 overflow-hidden list-none"
+          class="flex items-center bg-gray-50 border border-gray-300 rounded px-5 py-1 shadow-sm font-light m-5 overflow-hidden list-none"
         >
           {breadcrumbs.map((crumb, index) => (
             <li
@@ -209,7 +211,7 @@ const moreLinkStyle =
               {index === breadcrumbs.length - 1 || !crumb.href ? (
                 <span>{crumb.name}</span>
               ) : (
-                <a href={crumb.href} class="hover:underline">
+                <a href={crumb.href} class="hover:underline" style="color: #3e70bb;">
                   {crumb.name}
                 </a>
               )}
@@ -229,7 +231,7 @@ const moreLinkStyle =
         </ul>
       ) : (
         // Placeholder div with same height & margin to keep spacing
-        <div id="breadcrumbs" class="m-8 py-2" />
+        <div id="breadcrumbs" class="m-5 py-2" />
       )
     }
 
