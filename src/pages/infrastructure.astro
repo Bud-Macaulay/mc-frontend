@@ -22,12 +22,7 @@ const breadcrumbs = [
           <ul>
             <li>
               <b>Operator:</b> Materials Cloud is operated by the
-              <a href="team" target="_blank">Materials Cloud team</a>, a group
-              of developers working at the
-              <a href="https://epfl.ch" target="_blank"
-                >École Polytechnique Fédérale de Lausanne</a
-              >
-              (EPFL).
+              <a href="team" target="_blank">Materials Cloud team</a>.
             </li>
             <li>
               <b>Host:</b> Materials Cloud is hosted at the
@@ -65,56 +60,15 @@ const breadcrumbs = [
           <ul>
             <li>
               <b>Virtual Hardware:</b> Materials Cloud runs on the
-              <a href="https://user.cscs.ch/tools/openstack/" target="_blank"
-                >OpenStack installation at CSCS</a
-              >, which provides virtual machines, virtual disks and object
-              storage. The entire technical infrastructure of Materials Cloud is
+              <a href="https://docs.cscs.ch/services/kubernetes/" target="_blank"
+                >Kubernetes cluster at CSCS</a
+              >, which provides a framework for deploying containerized applications.
+              The entire technical infrastructure of Materials Cloud is
               physically located on CSCS premises.
             </li>
             <li>
-              <b>Server Management:</b> Materials Cloud servers are managed via
-              <a href="https://www.ansible.com" target="_blank">ansible</a> for automation
-              and transferability to other platforms in view of future federation
-              of services. For all servers we maintain independent duplicates where
-              changes are validated before they go into production.
-            </li>
-            <li>
-              <b>Frontend:</b> The Materials Cloud frontend application is written
-              in
-              <a href="https://angularjs.org/" target="_blank">AngularJS</a> and
-              is served using
-              <a href="https://www.apache.org/" target="_blank">apache</a>.
-            </li>
-            <li>
-              <b>Backend:</b> The individual Materials Cloud sections are powered
-              by different backends, including
-              <a href="https://slideshot.epfl.ch/" target="_blank">slideshot</a>
-              (LEARN), docker/<a
-                href="https://dokku.com/docs/getting-started/installation/#what-is-dokku"
-                >dokku</a
-              >
-              (WORK/TOOLS, DISCOVER),
-              <a
-                href="https://jupyterhub.readthedocs.io/en/latest/"
-                target="_blank">JupyterHub</a
-              >
-              (WORK/AiiDA lab), the
-              <a href="https://www.aiida.net" target="_blank">AiiDA</a> REST API
-              (EXPLORE), and
-              <a href="https://invenio-software.org/" target="_blank"
-                >Invenio 3</a
-              >
-              (ARCHIVE).
-            </li>
-            <li>
               <b>Data storage:</b> Data uploaded to or generated in Materials Cloud
-              is stored either in Cinder volumes or in the Swift object store.
-            </li>
-            <li>
-              <b>Backups:</b> As of December 2017, the object store is backed up
-              daily by CSCS for disaster recovery purposes. Efforts at CSCS are ongoing
-              to provide more fine-grained backups and versioning for both the object
-              store and Cinder volumes.
+              is stored at CSCS in an S3-compatible object storage based on the Ceph Object Gateway.
             </li>
             <li>
               <b>DOIs:</b> Materials Cloud partners with the
@@ -125,32 +79,6 @@ const breadcrumbs = [
               to provide DOIs for Materials Cloud Archive records.
             </li>
           </ul>
-        </div>
-        <hr />
-
-        <div class="page-container">
-          <div style="text-align: center">
-            <h3>Architecture Diagram</h3>
-            <em>Click on the figure to enlarge</em>
-          </div>
-          <br />
-          <div class="diagram">
-            <img
-              src="images/architecture_diagram.png"
-              style="max-width: 100%"
-            />
-          </div>
-        </div>
-        <hr />
-
-        <div class="page-container">
-          <div style="text-align: center">
-            <h3>Deployment Diagram</h3>
-          </div>
-          <br />
-          <div class="diagram">
-            <img src="images/mcloud_deployment.png" />
-          </div>
         </div>
       </div>
     </div>

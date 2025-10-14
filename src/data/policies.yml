@@ -19,7 +19,7 @@ tabs:
       <ul>
         <li><b>Scope:</b> Stand-alone tools with web frontends, hosted by Materials Cloud.</li>
       </ul>
-      <h4 class="mt-6 mb-2">AiiDA Lab</h4>
+      <h4 class="mt-6 mb-2">AiiDAlab</h4>
       <ul>
         <li><b>Scope:</b> Running and developing materials science workflows using jupyter notebooks and AiiDA.</li>
         <li><b>Quotas:</b> We reserve the rights to impose quotas on disk, RAM or CPU usage when necessary.</li>
