@@ -88,14 +88,7 @@ menu:
         matrices and the corresponding optical-activity fan diagram.
       logo: layer-raman.png
 
-    # - link: https://mybinder.org/v2/gh/PabloPiaggi/EnvironmentFinder/v1.0.1?urlpath=apps%2FApp.ipynb
-    #   title: Environment finder
-    #   authors: Pablo Piaggi
-    #   description: |
-    #     A tool for finding and analyzing atomic environments in crystal structures.
-    #   logo: logo-env-finder.png
-
-    - link: https://tbeta.matcloud.xyz/voila/render/Tight-Binding%20Electronic%20Transport%20Application.ipynb
+    - link: https://tbeta.materialscloud.io/voila/render/index.ipynb
       title: Tight-Binding Electronic Transport Application (TBETA) for graphene nanoribbon junctions
       authors: Kristiāns Čerņevičs, Valeria Granata, Oleg V. Yazyev
       description: |

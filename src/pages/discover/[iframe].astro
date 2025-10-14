@@ -18,37 +18,19 @@ export async function getStaticPaths() {
   ];
   // Filter iframe discover:
   const iframediscover = alldiscover
-    .filter((discover) => discover.iframe === true)
-    .map((discover) => ({
-      slug: discover.link,
-      ...discover,
-    }));
+    .filter((discover) => discover.iframe === true);
 
   return iframediscover.map((discover) => ({
-    params: { iframe: discover.slug },
+    params: { iframe: discover.link },
+    props: { discover },
   }));
 }
 
-const file = fs.readFileSync("./src/data/discover.yml");
-const discover = yaml.load(file);
-
-const alldiscover = [
-  ...discover.menu.main_discover,
-  ...discover.menu.contributed_discover,
-];
-const iframediscover = alldiscover
-  .filter((discover) => discover.iframe === true)
-  .map((discover) => ({
-    slug: discover.link,
-    ...discover,
-  }));
-
-const { iframe } = Astro.params;
-const page = iframediscover.find((discover) => discover.slug === iframe);
+const { discover: page } = Astro.props;
 
 const breadcrumbs = [
   { name: "Discover", href: "discover" },
-  { name: page.title, href: `discover/${iframe}` },
+  { name: page.title, href: `discover/${page.link}` },
 ];
 
 const accordionContainerStyle =

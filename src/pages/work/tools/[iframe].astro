@@ -10,35 +10,20 @@ export async function getStaticPaths() {
   const allTools = [...tools.menu.main_tools, ...tools.menu.contributed_tools];
   // Filter iframe tools:
   const iframeTools = allTools
-    .filter((tool) => tool.iframe === true)
-    .map((tool) => ({
-      slug: tool.link,
-      ...tool,
-    }));
+    .filter((tool) => tool.iframe === true);
 
   return iframeTools.map((tool) => ({
-    params: { iframe: tool.slug },
+    params: { iframe: tool.link },
+    props: { tool },
   }));
 }
 
-const file = fs.readFileSync("./src/data/tools.yml");
-const tools = yaml.load(file);
-
-const allTools = [...tools.menu.main_tools, ...tools.menu.contributed_tools];
-const iframeTools = allTools
-  .filter((tool) => tool.iframe === true)
-  .map((tool) => ({
-    slug: tool.link,
-    ...tool,
-  }));
-
-const { iframe } = Astro.params;
-const page = iframeTools.find((tool) => tool.slug === iframe);
+const { tool: page } = Astro.props;
 
 const breadcrumbs = [
   { name: "Work", href: "work" },
   { name: "Tools", href: "work/tools" },
-  { name: page.title, href: `work/tools/${iframe}` },
+  { name: page.title, href: `work/tools/${page.link}` },
 ];
 ---
 

@@ -67,6 +67,7 @@ menu:
       iframe: true
       iframe_src: "https://mol-explorer.materialscloud.io"
       iframe_maxWidth: "max-w-[1850px]"
+      iframe_height: 1500
       accordions:
         - title: "About"
           content: |
