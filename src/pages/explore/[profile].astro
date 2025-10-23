@@ -1,13 +1,12 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { ENV } from "../../config/env";
 import { AiidaExplorerWrapper } from '../../components/AiidaExplorerWrapper.jsx';
 
+const PUBLIC_URL_HOST_AIIDA = import.meta.env.PUBLIC_URL_HOST_AIIDA || "/";
 
 import fs from "fs";
 import yaml from "js-yaml";
 
-// build urls
 export async function getStaticPaths() {
   const file = fs.readFileSync("./src/data/explore.yml", "utf8");
   const data = yaml.load(file);
@@ -50,7 +49,7 @@ const breadcrumbs = [
     </div>
     <div class="h-[calc(100vh-224px)] min-h-[400px]">
       <AiidaExplorerWrapper client:only="react"
-        restApiUrl=`${ENV.HOST_AIIDA}${profile.rest_url}`
+        restApiUrl=`${PUBLIC_URL_HOST_AIIDA}${profile.rest_url}`
       />
     </div>
   </div>

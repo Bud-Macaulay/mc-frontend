@@ -6,8 +6,7 @@ import Download from '@lucide/astro/icons/download';
 
 import Layout from "@layouts/Layout.astro";
 
-// import { PUBLIC_FILES_BASE } from "astro:env/client";
-const PUBLIC_FILES_BASE = import.meta.env.PUBLIC_FILES_BASE || "/";
+const PUBLIC_URL_S3_FILES = import.meta.env.PUBLIC_URL_S3_FILES || "/";
 
 const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
 const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
@@ -130,7 +129,7 @@ const title = video.title;
             href={
               /^https?:\/\//i.test(res.url)
                 ? res.url
-                : `${PUBLIC_FILES_BASE}${video.id}/${res.url}`
+                : `${PUBLIC_URL_S3_FILES}${video.id}/${res.url}`
             }
             target="_blank"
             download={!/^https?:\/\//i.test(res.url)}

@@ -6,7 +6,7 @@ import Download from '@lucide/astro/icons/download';
 import CirclePlay from '@lucide/astro/icons/circle-play';
 
 
-const PUBLIC_FILES_BASE = import.meta.env.PUBLIC_FILES_BASE || "/";
+const PUBLIC_URL_S3_FILES = import.meta.env.PUBLIC_URL_S3_FILES || "/";
 
 const { entries, rootPath } = Astro.props;
 ---
@@ -104,7 +104,7 @@ const { entries, rootPath } = Astro.props;
                       href={
                         /^https?:\/\//i.test(res.url)
                           ? res.url
-                          : `${PUBLIC_FILES_BASE}${entry.id}/${res.url}`
+                          : `${PUBLIC_URL_S3_FILES}${entry.id}/${res.url}`
                       }
                       target="_blank"
                       download={!/^https?:\/\//i.test(res.url)}

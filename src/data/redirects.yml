@@ -6,8 +6,6 @@ redirects:
     to: "https://www.aiidalab.net/"
   - from: work/aiidalab
     to: "https://www.aiidalab.net/"
-  # - from: home
-  #   to: ""
   - from: archive
     to: https://archive.materialscloud.org/
 
@@ -22,9 +20,6 @@ redirects:
   # seekpath
   - from: seekpath
     to: https://seekpath.materialscloud.io/
-
-  - from: seekpath
-    to: https://seekpath.materialscloud.io/
   - from: work/seekpath
     to: https://seekpath.materialscloud.io/
   - from: work/tools/seekpath
@@ -37,5 +32,3 @@ redirects:
     to: https://qeinputgenerator.materialscloud.io/
   - from: work/tools/qeinputgenerator
     to: https://qeinputgenerator.materialscloud.io/
-
-  # etc. etc.
