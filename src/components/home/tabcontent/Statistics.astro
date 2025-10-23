@@ -1,36 +1,10 @@
 ---
 import { ENV } from "../../../config/env";
 
-// Fetch statistics on build.
-let archiveStats;
-try {
-  const res = await fetch(
-    `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/archive`
-  );
-  if (!res.ok) throw new Error(`Archive API error: ${res.status}`);
-  archiveStats = await res.json();
-} catch (err) {
-  console.error("Failed to fetch archive statistics, using fallback:", err);
-  archiveStats = {};
-}
-
-let exploreStats;
-try {
-  const res = await fetch(
-    `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/explore`
-  );
-  if (!res.ok) throw new Error(`Explore API error: ${res.status}`);
-  exploreStats = await res.json();
-} catch (err) {
-  console.error("Failed to fetch explore statistics, using fallback:", err);
-  exploreStats = {};
-}
-
-// Helper for safely formatting numbers
+// helper
 const formatNumber = (n: number | undefined | null) =>
   n?.toLocaleString("de-CH") ?? "N/A";
 
-// Helper for formatting a date string
 const formatDate = (dateStr?: string) => {
   const date = dateStr ? new Date(dateStr) : new Date();
   return (
@@ -42,14 +16,53 @@ const formatDate = (dateStr?: string) => {
   );
 };
 
-const structureNumber = formatNumber(archiveStats?.data?.n_structures);
-const dftStructureNumber = formatNumber(archiveStats?.data?.dft_structures);
+const stats = [
+  {
+    value: formatNumber(39037528),
+    label: "crystal structures*",
+    description: `downloadable from the <br /><a href="https://archive.materialscloud.org/">Materials Cloud Archive</a>`,
+  },
+  {
+    value: formatNumber(13775215),
+    label: "structures",
+    description: `in the <a href="https://archive.materialscloud.org/">Materials Cloud Archive</a><br/>with associated DFT SCF calculations`,
+  },
+  {
+    value: formatNumber(4778096),
+    label: "data and calculation nodes",
+    description: `in the <a href="https://materialscloud.org/explore/menu">Explore section</a>,<br />with full AiiDA provenance`,
+  },
+  {
+    value: formatNumber(1009362),
+    label: "reproducible calculations",
+    description: `in the <a href="https://materialscloud.org/explore/menu">Explore section</a>,<br />with full AiiDA provenance`,
+  },
+];
 
-const totalNodes = formatNumber(exploreStats?.data?.nodes);
-const totalProcesses = formatNumber(exploreStats?.data?.total_processes);
+const charts = [
+  {
+    title: "Materials Cloud all",
+    src: "images/plausible/mc_all_barchart_10_10_2025.png",
+    alt: "Monthly visits",
+  },
+  {
+    title: "Materials Cloud all",
+    src: "images/plausible/mc_all_pie_10_10_2025.png",
+    alt: "Visits by country",
+  },
+  {
+    title: "Materials Cloud archive",
+    src: "images/plausible/mc_archive_barchart_10_10_2025.png",
+    alt: "Archive monthly visits",
+  },
+  {
+    title: "Materials Cloud archive",
+    src: "images/plausible/mc_archive_pie_10_10_2025.png",
+    alt: "Archive visits by country",
+  },
+];
 
-const archiveDate = formatDate(archiveStats?.data?.time_interval?.[1]);
-
+const archiveDate = formatDate("2024-10-10");
 const imageStyle = "w-full max-h-72 object-contain";
 ---
 
@@ -58,56 +71,22 @@ const imageStyle = "w-full max-h-72 object-contain";
     <h3 class="text-center">Materials Cloud statistics</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="text-center space-y-2">
-        <h3 class="text-2xl font-bold">{structureNumber}</h3>
-        <h4 class="text-base font-medium">crystal structures*</h4>
-        <p class="text-gray-900">
-          downloadable from the <br />
-          <a href="https://archive.materialscloud.org/"
-            >Materials Cloud Archive</a
-          >
-        </p>
-      </div>
-      <div class="text-center space-y-2">
-        <h3 class="text-2xl font-bold">{dftStructureNumber}</h3>
-        <h4 class="text-base font-medium">structures</h4>
-        <p class="text-gray-900">
-          in the
-          <a href="https://archive.materialscloud.org/"
-            >Materials Cloud Archive</a
-          ><br />
-          with associated DFT SCF calculations
-        </p>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="text-center space-y-2">
-        <h3 class="text-2xl font-bold">{totalNodes}</h3>
-        <h4 class="text-base font-medium">data and calculation nodes</h4>
-        <p class="text-gray-900">
-          in the
-          <a href="https://materialscloud.org/explore/menu">Explore section</a
-          >,<br />
-          with full AiiDA provenance
-        </p>
-      </div>
-      <div class="text-center space-y-2">
-        <h3 class="text-2xl font-bold">{totalProcesses}</h3>
-        <h4 class="text-base font-medium">reproducible calculations</h4>
-        <p class="text-gray-900">
-          in the
-          <a href="https://materialscloud.org/explore/menu">Explore section</a
-          >,<br />
-          with full AiiDA provenance
-        </p>
-      </div>
+      {
+        stats.map((stat) => (
+          <div class="text-center">
+            <h3 class="text-2xl font-bold">{stat.value}</h3>
+            <h4 class="text-base font-medium">{stat.label}</h4>
+            <p class="text-gray-900" set:html={stat.description} />
+          </div>
+        ))
+      }
     </div>
 
     <p class="text-gray-600 text-sm leading-relaxed text-center">
       Results based on records published on Materials Cloud Archive before {
         archiveDate
-      }<br />
+      }
+      <br />
       *Structures counted with an automated script, no check for duplicates has been
       performed
     </p>
@@ -117,59 +96,25 @@ const imageStyle = "w-full max-h-72 object-contain";
         Number of unique page visits per month and per country<br />
         (last update Oct 10, 2025)
       </h4>
-      <h6 class="text-sm text-gray-600">
+      <div class="text-sm text-gray-600">
         Materials Cloud uses <a
           href="https://plausible.io/data-policy"
           target="_blank">Plausible</a
-        >
-        to count its pages views without tracking users or storing cookies.
-      </h6>
+        > to count its pages views without tracking users or storing cookies.
+      </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 px-2 gap-x-4">
-      <div class="flex flex-col items-center">
-        <span class="mb-4 text-center text-lg text-gray-700">
-          Materials Cloud all
-        </span>
-        <img
-          class={imageStyle}
-          src="images/plausible/mc_all_barchart_10_10_2025.png"
-          alt="Monthly visits"
-        />
-      </div>
-
-      <div class="flex flex-col items-center">
-        <span class="mb-4 text-center text-lg text-gray-700">
-          Materials Cloud all
-        </span>
-        <img
-          class={imageStyle}
-          src="images/plausible/mc_all_pie_10_10_2025.png"
-          alt="Visits by country"
-        />
-      </div>
-
-      <div class="flex flex-col items-center">
-        <span class="mb-4 text-center text-lg text-gray-700">
-          Materials Cloud archive
-        </span>
-        <img
-          class={imageStyle}
-          src="images/plausible/mc_archive_barchart_10_10_2025.png"
-          alt="Archive monthly visits"
-        />
-      </div>
-
-      <div class="flex flex-col items-center">
-        <span class="mb-4 text-center text-lg text-gray-700">
-          Materials Cloud archive
-        </span>
-        <img
-          class={imageStyle}
-          src="images/plausible/mc_archive_pie_10_10_2025.png"
-          alt="Archive visits by country"
-        />
-      </div>
+      {
+        charts.map((chart) => (
+          <div class="flex flex-col items-center">
+            <span class="mb-0 text-center text-lg text-gray-700">
+              {chart.title}
+            </span>
+            <img class={imageStyle} src={chart.src} alt={chart.alt} />
+          </div>
+        ))
+      }
     </div>
   </div>
 </div>

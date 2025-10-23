@@ -17,8 +17,9 @@ export async function getStaticPaths() {
     ...discover.menu.contributed_discover,
   ];
   // Filter iframe discover:
-  const iframediscover = alldiscover
-    .filter((discover) => discover.iframe === true);
+  const iframediscover = alldiscover.filter(
+    (discover) => discover.iframe === true
+  );
 
   return iframediscover.map((discover) => ({
     params: { iframe: discover.link },
@@ -77,7 +78,14 @@ const accordionContentStyle =
           <summary class={accordionTitleStyle}>
             {accordion.title}
             <span class="transition-transform duration-300 group-open:rotate-90">
-              ▶
+              <svg
+                className="transition-transform duration-300 group-open:rotate-90"
+                width={20}
+                height={20}
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" fill="currentColor" />
+              </svg>
             </span>
           </summary>
           <div class={accordionContentStyle} set:html={accordion.content} />
