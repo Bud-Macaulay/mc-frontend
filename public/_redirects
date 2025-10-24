@@ -1,7 +1,15 @@
 /optimade https://optimade.materialscloud.io/ 301
-
 /aiidalab https://www.aiidalab.net/ 301
-
 /work/aiidalab https://www.aiidalab.net/ 301
-
 /archive https://archive.materialscloud.org/ 301
+/moderation https://archive.materialscloud.org/information#moderation_policies 301
+
+/tools /work/tools 301
+
+/seekpath https://seekpath.materialscloud.io/ 301
+/work/seekpath https://seekpath.materialscloud.io/ 301
+/work/tools/seekpath https://seekpath.materialscloud.io/ 301
+
+/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
+/work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
+/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
