@@ -1,6 +1,4 @@
 # navs away
-
-/optimade https://optimade.materialscloud.io/ 301
 /aiidalab https://www.aiidalab.net/ 301
 /work/aiidalab https://www.aiidalab.net/ 301
 /archive https://archive.materialscloud.org/ 301
@@ -18,7 +16,7 @@
 
 /tools /work 301
 /work/tools /work 301
-work/tools/options /work 301
+/work/tools/options /work 301
 
 # -------------- Discover --------------
 ## MCXD legacy
@@ -32,14 +30,14 @@ work/tools/options /work 301
 /mc2d https://mc2d.materialscloud.org/ 301
 
 # ACWF Legacy
-/acwf-verification https://acwf-verification.materialscloud.org/
+/acwf-verification https://acwf-verification.materialscloud.org/ 301
 #ACWF New
-/discover/acwf-verification https://acwf-verification.materialscloud.org/
+/discover/acwf-verification https://acwf-verification.materialscloud.org/ 301
 
 # -------------- Core Tools --------------
-/qeinputgenerator https://qeinputgenerator.materialscloud.io/
+/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
 /work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
-/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/
+/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
 
 /seekpath https://seekpath.materialscloud.io/ 301
 /work/seekpath https://seekpath.materialscloud.io/ 301
