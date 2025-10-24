@@ -65,6 +65,6 @@
 /explore/:profile/details/:uuid?nodeType=NODE /explore/:profile/?uuid=:uuid 301
 
 # -------------- OPTIMADE APIs --------------
-/optimade/main/_ https://optimade.dev.materialscloud.org/main/index/:splat 301
-/optimade/archive/_ https://optimade.dev.materialscloud.org/archive/index/:splat 301
+/optimade/main/* https://optimade.dev.materialscloud.org/main/index/:splat 301
+/optimade/archive/* https://optimade.dev.materialscloud.org/archive/index/:splat 301
 /optimade https://optimade.dev.materialscloud.org 301
