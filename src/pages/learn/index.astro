@@ -33,9 +33,7 @@ const learnButtons = [
       <h3 class="text-2xl">Associated educational platforms</h3>
       <hr class="border-t border-gray-300 mb-6" />
 
-      <div
-        class="grid w-3/5 mx-auto gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center"
-      >
+      <div class="mx-auto flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 sm:gap-6 items-center">
         {
           learnButtons.map((btn) => (
             <RectangleButton {...btn} />
