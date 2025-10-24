@@ -1,15 +1,40 @@
+# navs away
+
 /optimade https://optimade.materialscloud.io/ 301
 /aiidalab https://www.aiidalab.net/ 301
 /work/aiidalab https://www.aiidalab.net/ 301
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
 
-/tools /work/tools 301
+# dropping old url syntax
+
+/learn/sections /learn 301
+/work/menu /work 301
+/discover/menu /discover 301
+/explore/menu /explore 301
+
+# tools and work flatten
+
+/tools /work 301
+/work/tools /work 301
+work/tools/options /work 301
+
+# Tools specific REDIRS.
+
+/mc3d https://mc3d.materialscloud.org/ 301
+/mc2d https://mc2d.materialscloud.org/301
 
 /seekpath https://seekpath.materialscloud.io/ 301
 /work/seekpath https://seekpath.materialscloud.io/ 301
 /work/tools/seekpath https://seekpath.materialscloud.io/ 301
 
+# Tools specific REDIRS.
+
 /qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
 /work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
 /work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
+
+# Old EXPLORE to new EXPLORE mapping.
+
+/explore/:variable/details/:uuid /explore/:variable/?uuid=:uuid 301
+/explore/:variable/details/:uuid?nodeType=NODE /explore/:variable/?uuid=:uuid 301
