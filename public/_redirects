@@ -8,6 +8,7 @@
 
 # dropping old url syntax
 
+/home / 301
 /learn/sections /learn 301
 /work/menu /work 301
 /discover/menu /discover 301
@@ -19,22 +20,48 @@
 /work/tools /work 301
 work/tools/options /work 301
 
-# Tools specific REDIRS.
+# -------------- Discover --------------
+## MCXD legacy
+/discover/3dcd https://mc3d.materialscloud.org/ 301
+/explore/3dcd https://mc3d.materialscloud.org/ 301
+/discover/2dstructures https://mc2d.materialscloud.org/ 301
+/explore/2dstructures https://mc2d.materialscloud.org/ 301
 
+# MCXD new
 /mc3d https://mc3d.materialscloud.org/ 301
-/mc2d https://mc2d.materialscloud.org/301
+/mc2d https://mc2d.materialscloud.org/ 301
+
+# ACWF Legacy
+/acwf-verification https://acwf-verification.materialscloud.org/
+#ACWF New
+/discover/acwf-verification https://acwf-verification.materialscloud.org/
+
+# -------------- Core Tools --------------
+/qeinputgenerator https://qeinputgenerator.materialscloud.io/
+/work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
+/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/
 
 /seekpath https://seekpath.materialscloud.io/ 301
 /work/seekpath https://seekpath.materialscloud.io/ 301
 /work/tools/seekpath https://seekpath.materialscloud.io/ 301
 
-# Tools specific REDIRS.
+/optimade https://optimade.materialscloud.io/ 301
+/work/optimade https://optimade.materialscloud.io/ 301
+/work/tools/optimade https://optimade.materialscloud.io/ 301
 
-/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
-/work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
-/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
+/interactivephonon https://interactivephonon.materialscloud.io/ 301
+/work/interactivephonon https://interactivephonon.materialscloud.io/ 301
+/work/tools/interactivephonon https://interactivephonon.materialscloud.io/ 301
+
+# -------------- Ext Tools --------------
+/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb 301
+/work/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb 301
+/work/tools/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb/ 301
+
+/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
+/work/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
+/work/tools/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
 
 # Old EXPLORE to new EXPLORE mapping.
-
-/explore/:variable/details/:uuid /explore/:variable/?uuid=:uuid 301
-/explore/:variable/details/:uuid?nodeType=NODE /explore/:variable/?uuid=:uuid 301
+/explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
+/explore/:profile/details/:uuid?nodeType=NODE /explore/:profile/?uuid=:uuid 301
