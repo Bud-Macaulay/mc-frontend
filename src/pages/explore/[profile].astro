@@ -2,10 +2,10 @@
 import Layout from "@layouts/Layout.astro";
 import { AiidaExplorerWrapper } from '../../components/AiidaExplorerWrapper.jsx';
 
-const PUBLIC_URL_HOST_AIIDA = import.meta.env.PUBLIC_URL_HOST_AIIDA || "/";
-
 import fs from "fs";
 import yaml from "js-yaml";
+
+const PUBLIC_URL_HOST_AIIDA = import.meta.env.PUBLIC_URL_HOST_AIIDA;
 
 export async function getStaticPaths() {
   const file = fs.readFileSync("./src/data/explore.yml", "utf8");
@@ -17,7 +17,6 @@ export async function getStaticPaths() {
     props: { profile },
   }));
 }
-
 const { profile } = Astro.props;
 
 const breadcrumbs = [
